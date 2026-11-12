@@ -1,0 +1,13 @@
+titulo: Iris
+url: https://es.wikipedia.org/wiki/Iris
+licencia: CC BY-SA 4.0 (Wikipedia en español)
+
+El iris, en anatomía, es un diafragma pigmentado y circular​ del ojo que separa la cámara anterior de la cámara posterior. Además, el iris consta de fibras musculares lisas circulares y radiales dispuestas en una estructura en forma de rosca.​
+Posee una abertura central de tamaño variable que comunica las dos cámaras, llamada pupila. Su función principal es controlar la cantidad de luz que penetra en el ojo.​
+Corresponde a la porción más anterior de la túnica vascular del ojo, la cual forma un diafragma contráctil delante del cristalino. Se ubica tras la córnea.
+El iris dispone de dos músculos, el músculo esfínter del iris, que disminuye la pupila de tamaño (miosis), y el músculo dilatador del iris, que permite a la pupila dilatarse (midriasis).
+
+== Color del iris ==
+
+El color del iris está determinado genéticamente. En los niños recién nacidos, el color del iris suele ser azul claro o grisáceo. La coloración definitiva se alcanza entre los seis y diez meses. El color está determinado por el número y distribución de unas células que contienen el pigmento melanina y se llaman melanocitos. 
+Por ejemplo, si la melanina se encuentra solamente en la zona del epitelio posterior del iris, y carece de ella en el estroma y la membrana limitante anterior, el ojo es azulado; en cambio, si se distribuye por todo el espesor del iris, el ojo es de color negro.

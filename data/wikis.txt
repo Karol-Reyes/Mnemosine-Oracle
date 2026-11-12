@@ -1,0 +1,62 @@
+# Artículos de Wikipedia en español para el grafo.
+# Formato: Nombre  |  Título exacto en Wikipedia (opcional).
+# Si el título no existe o es una desambiguación, el script busca "<Nombre> mitología griega".
+
+# --- NIVEL 1: aparecen en los dos poemas (puentes del grafo)
+Zeus
+Atenea
+Hera
+Poseidón
+Apolo
+Ares
+Hefesto
+Hermes
+Afrodita
+Ártemis
+Hades
+Aquiles
+Agamenón
+Menelao
+Helena | Helena de Troya
+Odiseo
+Néstor
+Áyax | Áyax el Grande
+Eos
+Troya
+
+# --- NIVEL 2: Ilíada
+Héctor
+Príamo
+Patroclo
+Tetis
+Peleo
+Paris
+Hécuba
+Sarpedón
+Diomedes
+Briseida
+Andrómaca
+Eneas
+Iris
+Leto
+
+# --- NIVEL 3: Odisea
+Telémaco
+Penélope
+Laertes
+Calipso
+Circe
+Polifemo
+Escila
+Caribdis
+Sirenas | Sirena (mitología)
+Alcínoo
+Tiresias
+Helios
+Egisto
+Orestes
+Perséfone
+Antínoo
+Euriclea
+Ítaca
+Pilos

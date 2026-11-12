@@ -1,0 +1,23 @@
+# Secretos
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Salidas regenerables
+data/processed/
+graph/dumps/*
+!graph/dumps/.gitkeep
+scratch_models/checkpoints/
+eval/resultados/*
+!eval/resultados/.gitkeep
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

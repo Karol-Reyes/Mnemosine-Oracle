@@ -1,0 +1,22 @@
+# Python 3.10 a 3.13 (recomendado 3.11 o 3.12)
+
+# Grafo de conocimiento y GraphRAG
+neo4j-graphrag[google-genai,sentence-transformers,fuzzy-matching]==1.23.0
+
+# Utilidades
+python-dotenv>=1.0
+requests>=2.31
+pandas>=2.0
+matplotlib>=3.8
+
+# Agente
+langchain>=0.3
+langchain-google-genai>=2.0
+langgraph>=0.2
+
+# Interfaz
+gradio>=4.0
+
+# Alternativas a Gemini (opcionales; se eligen con LLM_PROVIDER en .env)
+#   Ollama (modelo local):           pip install ollama
+#   API compatible con OpenAI:       pip install openai

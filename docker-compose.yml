@@ -1,0 +1,19 @@
+# La contraseña se toma de NEO4J_PASSWORD en el archivo .env.
+services:
+  neo4j:
+    image: neo4j:5.26
+    container_name: mnemosine-neo4j
+    ports:
+      - "7474:7474"   # Neo4j Browser: http://localhost:7474
+      - "7687:7687"   # Bolt (lo usa Python)
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-mnemosine123}
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_security_procedures_unrestricted: apoc.*
+      NEO4J_server_memory_heap_max__size: 1G
+    volumes:
+      - neo4j_data:/data
+      - ./graph/dumps:/backups
+
+volumes:
+  neo4j_data:
