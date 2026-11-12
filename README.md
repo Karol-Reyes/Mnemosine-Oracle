@@ -224,20 +224,20 @@ Las preguntas se definieron **antes** de construir el grafo, para no sesgarlas h
 - [x] Estructura del repositorio
 - [x] `docker-compose.yml` con Neo4j + APOC
 - [x] `requirements.txt`, `.env.example`, `check_setup.py`
-- [ ] Neo4j levantado y `check_setup.py` en verde
+- [x] Neo4j levantado y `check_setup.py` en verde
 
 **Fase 1: datos (días 1-2)**
 - [x] 16 cantos seleccionados en `data/raw/`
 - [x] `equivalencias.csv` y `entidades.csv`
 - [x] `prepare.py`: normalización y fragmentos
-- [ ] Descargar Wikipedia y revisar `_manifest.csv`
+- [x] Descargar Wikipedia y revisar `_manifest.csv`
 
 **Fase 2: grafo (días 3-4)**
 - [x] Esquema fijo (`graph/schema.py`)
 - [x] Carga reanudable y revisión (`graph/build.py`, `graph/revisar.py`)
 - [x] Cargar las wikis (esqueleto genealógico)
 - [x] Cargar un canto por poema y revisar a mano
-- [ ] Cargar el resto y subir `data/extracciones/` al repo como respaldo
+- [x] Cargar el resto y subir `data/extracciones/` al repo como respaldo
 
 **Fase 3: recuperación (días 5-7)**
 - [ ] RAG normal (baseline)
