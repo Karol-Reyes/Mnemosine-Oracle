@@ -1,0 +1,29 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Alcínoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Grupo",
+   "properties": {
+    "name": "feacios"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

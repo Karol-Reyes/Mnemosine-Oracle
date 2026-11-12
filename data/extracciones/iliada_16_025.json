@@ -1,0 +1,74 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Patroclo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Trasidemo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Sarpedón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Criatura",
+   "properties": {
+    "name": "Pédaso"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Automedonte"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "3",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "0",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

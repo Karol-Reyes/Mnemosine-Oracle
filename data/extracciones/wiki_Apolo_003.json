@@ -1,0 +1,146 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Apolo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hermes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anfión"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tebas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eumelo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Pieria"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Laomedonte"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Lugar",
+   "properties": {
+    "name": "Ida"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Admeto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Lugar",
+   "properties": {
+    "name": "Feras"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Grupo",
+   "properties": {
+    "name": "dorios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Lugar",
+   "properties": {
+    "name": "Peloponeso"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "0",
+   "type": "ORDENA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "12",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

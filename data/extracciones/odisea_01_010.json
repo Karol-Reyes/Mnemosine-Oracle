@@ -1,0 +1,21 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Lugar",
+   "properties": {
+    "name": "Ítaca"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

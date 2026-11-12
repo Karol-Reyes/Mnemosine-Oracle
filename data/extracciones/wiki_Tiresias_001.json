@@ -1,0 +1,236 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Tiresias"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tebas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Calcas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Everes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Cariclo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Udeo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Manto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Dafne"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Históride"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Alcmena"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Cadmo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Grupo",
+   "properties": {
+    "name": "Epígonos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Criatura",
+   "properties": {
+    "name": "Esfinge"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Edipo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Lugar",
+   "properties": {
+    "name": "Ítaca"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Lugar",
+   "properties": {
+    "name": "Hades"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Deidad",
+   "properties": {
+    "name": "Atenea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "4",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "8",
+   "type": "ORDENA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "15",
+   "end_node_id": "17",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "0",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "0",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

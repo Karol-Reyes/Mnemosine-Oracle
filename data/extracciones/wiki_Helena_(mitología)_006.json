@@ -1,0 +1,335 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Córito"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Paris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Enone"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Helena"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Deífobo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Príamo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Héleno"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Casandra"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Calcas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Grupo",
+   "properties": {
+    "name": "Aqueos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Objeto",
+   "properties": {
+    "name": "caballo de madera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Grupo",
+   "properties": {
+    "name": "Troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menelao"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Lugar",
+   "properties": {
+    "name": "Egipto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Lugar",
+   "properties": {
+    "name": "Esparta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Lugar",
+   "properties": {
+    "name": "Isla de Helena"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Personaje",
+   "properties": {
+    "name": "Nicóstrato"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Personaje",
+   "properties": {
+    "name": "Telémaco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Personaje",
+   "properties": {
+    "name": "Herméione"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "1",
+   "end_node_id": "0",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "3",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "4",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "3",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "7",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "6",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "4",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "3",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "15",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "16",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "16",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "16",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "14",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "19",
+   "end_node_id": "16",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "14",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

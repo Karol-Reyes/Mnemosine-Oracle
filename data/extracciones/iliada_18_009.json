@@ -1,0 +1,29 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Iris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Grupo",
+   "properties": {
+    "name": "Troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Grupo",
+   "properties": {
+    "name": "Aqueos"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

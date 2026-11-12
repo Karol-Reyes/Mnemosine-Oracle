@@ -1,0 +1,82 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Perséfone"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Hades"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Deméter"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Criatura",
+   "properties": {
+    "name": "Medusa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Pluto"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "1",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

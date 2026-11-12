@@ -1,0 +1,217 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ártemis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Leto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Apolo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Creta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Lugar",
+   "properties": {
+    "name": "Icaria"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Eubea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Lugar",
+   "properties": {
+    "name": "Perge"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Lugar",
+   "properties": {
+    "name": "Taigeto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Lugar",
+   "properties": {
+    "name": "Euripo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Deidad",
+   "properties": {
+    "name": "Britomartis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Procris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Personaje",
+   "properties": {
+    "name": "Cirene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Personaje",
+   "properties": {
+    "name": "Atalanta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Deidad",
+   "properties": {
+    "name": "Selene"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "4",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "6",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "7",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "8",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "9",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "10",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "11",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "12",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "13",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

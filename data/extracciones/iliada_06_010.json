@@ -1,0 +1,137 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Belerofonte"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Tideo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tebas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Grupo",
+   "properties": {
+    "name": "aqueos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Lugar",
+   "properties": {
+    "name": "Argos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Licia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Grupo",
+   "properties": {
+    "name": "troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Glauco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Diomedes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Héctor"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "9",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "3",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "5",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "9",
+   "type": "ORDENA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "11",
+   "end_node_id": "7",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

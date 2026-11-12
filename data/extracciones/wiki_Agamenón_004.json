@@ -1,0 +1,427 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Agamenón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Casandra"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Príamo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Teledamo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pélope"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Argólida"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Egisto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Clitemnestra"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Lugar",
+   "properties": {
+    "name": "Hades"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menelao"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Lugar",
+   "properties": {
+    "name": "Egipto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Lugar",
+   "properties": {
+    "name": "Micenas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ifigenia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Lugar",
+   "properties": {
+    "name": "Amiclas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Lugar",
+   "properties": {
+    "name": "Laconia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Personaje",
+   "properties": {
+    "name": "Argino"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Personaje",
+   "properties": {
+    "name": "Haleso"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Lugar",
+   "properties": {
+    "name": "Falisci"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eneas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Lugar",
+   "properties": {
+    "name": "Italia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "22",
+   "label": "Personaje",
+   "properties": {
+    "name": "Crisótemis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "23",
+   "label": "Personaje",
+   "properties": {
+    "name": "Electra"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "24",
+   "label": "Personaje",
+   "properties": {
+    "name": "Orestes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "25",
+   "label": "Personaje",
+   "properties": {
+    "name": "Crises"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "26",
+   "label": "Personaje",
+   "properties": {
+    "name": "Criseida"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "27",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pílades"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "28",
+   "label": "Lugar",
+   "properties": {
+    "name": "Falerii"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "2",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "1",
+   "end_node_id": "6",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "6",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "1",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "2",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "10",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "1",
+   "end_node_id": "10",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "4",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "5",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "22",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "22",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "23",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "23",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "24",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "24",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "26",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

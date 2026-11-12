@@ -1,0 +1,136 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Grupo",
+   "properties": {
+    "name": "pretendientes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ulises"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Antínoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eurímaco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Noemón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Fronio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Telémaco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Lugar",
+   "properties": {
+    "name": "Pilos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Objeto",
+   "properties": {
+    "name": "nave"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Lugar",
+   "properties": {
+    "name": "Élide"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Deidad",
+   "properties": {
+    "name": "Neleo"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "2",
+   "end_node_id": "0",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "0",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "8",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "7",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "7",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

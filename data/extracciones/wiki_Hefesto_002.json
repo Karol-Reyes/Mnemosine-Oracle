@@ -1,0 +1,76 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hefesto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Lemnos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tracia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Fenicia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Etna"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "6",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Eos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Océano"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Helios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hiperión"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Tea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Selene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Deidad",
+   "properties": {
+    "name": "Eurifaesa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Etra"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Deidad",
+   "properties": {
+    "name": "Palas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Deidad",
+   "properties": {
+    "name": "Noche"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Criatura",
+   "properties": {
+    "name": "Lampo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Criatura",
+   "properties": {
+    "name": "Faetonte"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "4",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "6",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "7",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "9",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "10",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "11",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

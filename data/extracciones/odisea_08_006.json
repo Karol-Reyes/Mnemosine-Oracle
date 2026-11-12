@@ -1,0 +1,217 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Demódoco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Grupo",
+   "properties": {
+    "name": "feacios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Acróneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ocíalo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Elatreo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Nauteo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Primneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anquíalo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eretmeo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ponteo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Proreo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Toón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anabesíneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anfíalo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Políneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Personaje",
+   "properties": {
+    "name": "Euríalo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ares"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Personaje",
+   "properties": {
+    "name": "Naubólides"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Personaje",
+   "properties": {
+    "name": "Laodamante"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Personaje",
+   "properties": {
+    "name": "Alcínoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Personaje",
+   "properties": {
+    "name": "Halio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Personaje",
+   "properties": {
+    "name": "Clitoneo"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "13",
+   "end_node_id": "14",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "19",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "19",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "21",
+   "end_node_id": "19",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

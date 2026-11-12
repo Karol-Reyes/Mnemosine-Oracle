@@ -1,0 +1,114 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Patroclo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Protesilao"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pirecmes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Lugar",
+   "properties": {
+    "name": "Amidón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Axio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Grupo",
+   "properties": {
+    "name": "peonios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Grupo",
+   "properties": {
+    "name": "teucros"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Grupo",
+   "properties": {
+    "name": "dánaos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Grupo",
+   "properties": {
+    "name": "aqueos"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "2",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "5",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "7",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "9",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

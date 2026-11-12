@@ -1,0 +1,29 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

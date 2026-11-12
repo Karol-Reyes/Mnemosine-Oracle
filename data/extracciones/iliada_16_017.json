@@ -1,0 +1,225 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Patroclo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Areilico"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Grupo",
+   "properties": {
+    "name": "troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menelao"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Toante"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anficlo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Antíloco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Atimnio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Maris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Trasimedes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Sarpedón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Amisodaro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Criatura",
+   "properties": {
+    "name": "Quimera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Lugar",
+   "properties": {
+    "name": "Érebo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Áyax"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Personaje",
+   "properties": {
+    "name": "Cleobulo"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "1",
+   "end_node_id": "2",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "4",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "5",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "7",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "2",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "7",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "6",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "8",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "11",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "11",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "13",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "15",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

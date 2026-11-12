@@ -1,0 +1,21 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Lugar",
+   "properties": {
+    "name": "Océano"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Grupo",
+   "properties": {
+    "name": "aqueos"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

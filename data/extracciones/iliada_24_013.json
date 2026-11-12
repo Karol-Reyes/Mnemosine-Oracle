@@ -1,0 +1,37 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Héctor"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Grupo",
+   "properties": {
+    "name": "misios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Príamo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Hécuba"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

@@ -1,0 +1,201 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Criatura",
+   "properties": {
+    "name": "Polifemo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Poseidón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Galatea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Toosa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Forcis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Criatura",
+   "properties": {
+    "name": "Antífates"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Criatura",
+   "properties": {
+    "name": "Cíclope"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Sicano"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Criatura",
+   "properties": {
+    "name": "Briareo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Gálato"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Celto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ilirio"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "4",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "9",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "11",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "11",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "12",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "12",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

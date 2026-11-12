@@ -1,0 +1,68 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Iris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Aquiles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Atenea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Grupo",
+   "properties": {
+    "name": "aqueos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Grupo",
+   "properties": {
+    "name": "teucros"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "3",
+   "end_node_id": "1",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "5",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

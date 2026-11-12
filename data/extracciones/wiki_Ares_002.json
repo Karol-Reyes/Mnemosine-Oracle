@@ -1,0 +1,100 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ares"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Esparta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Lugar",
+   "properties": {
+    "name": "Cólquide"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Objeto",
+   "properties": {
+    "name": "vellocino de oro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Cástor"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pólux"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Laconia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Grupo",
+   "properties": {
+    "name": "amazonas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Lugar",
+   "properties": {
+    "name": "Atenas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Alejandro Magno"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

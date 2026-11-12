@@ -1,0 +1,367 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Diomedes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Atenea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Grupo",
+   "properties": {
+    "name": "troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pándaro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eneas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Afrodita"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Grupo",
+   "properties": {
+    "name": "aqueos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Apolo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anquises"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Héctor"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ares"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Lugar",
+   "properties": {
+    "name": "Olimpo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Personaje",
+   "properties": {
+    "name": "Dolón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Objeto",
+   "properties": {
+    "name": "Paladio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Personaje",
+   "properties": {
+    "name": "Reso"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Personaje",
+   "properties": {
+    "name": "Odiseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Lugar",
+   "properties": {
+    "name": "Argos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Personaje",
+   "properties": {
+    "name": "Egialea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Personaje",
+   "properties": {
+    "name": "Cometes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "22",
+   "label": "Lugar",
+   "properties": {
+    "name": "Canusio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "23",
+   "label": "Lugar",
+   "properties": {
+    "name": "Siponto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "24",
+   "label": "Lugar",
+   "properties": {
+    "name": "Argiripa"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "1",
+   "end_node_id": "0",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "2",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "4",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "4",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "4",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "9",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "2",
+   "type": "APOYA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "0",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "10",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "13",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "15",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "17",
+   "end_node_id": "16",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "0",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "0",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "21",
+   "end_node_id": "0",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "22",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "23",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "24",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

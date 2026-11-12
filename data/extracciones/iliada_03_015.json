@@ -1,0 +1,98 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Héctor"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Paris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Helena"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Licaón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menelao"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Grupo",
+   "properties": {
+    "name": "Troyanos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Grupo",
+   "properties": {
+    "name": "Aqueos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "1",
+   "end_node_id": "2",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "3",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "1",
+   "end_node_id": "4",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

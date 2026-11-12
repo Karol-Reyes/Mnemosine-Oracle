@@ -1,0 +1,212 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Orfeo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eur\\u00idice"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hades"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Persïefone"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tártaro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Heracles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Criatura",
+   "properties": {
+    "name": "Cerbero"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menetes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ceutónimo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Teseo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pirítoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Lugar",
+   "properties": {
+    "name": "Élide"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Lugar",
+   "properties": {
+    "name": "Pilos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Personaje",
+   "properties": {
+    "name": "Neleo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Grupo",
+   "properties": {
+    "name": "Pilos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Deidad",
+   "properties": {
+    "name": "Peón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Lugar",
+   "properties": {
+    "name": "Olimpo"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "2",
+   "end_node_id": "3",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "5",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "2",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "11",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "12",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "14",
+   "type": "APOYA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "2",
+   "type": "ENFRENTA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "15",
+   "end_node_id": "2",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "2",
+   "end_node_id": "16",
+   "type": "VIAJA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

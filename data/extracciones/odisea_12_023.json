@@ -1,0 +1,13 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Calipso"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

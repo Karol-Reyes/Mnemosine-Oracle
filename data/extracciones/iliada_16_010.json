@@ -1,0 +1,221 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Aquiles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Menestio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Esperquio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Polidora"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Personaje",
+   "properties": {
+    "name": "Peleo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Boro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Perieres"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eudoro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Polimela"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Personaje",
+   "properties": {
+    "name": "Filante"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hermes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ártemis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ilitia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Deidad",
+   "properties": {
+    "name": "Helios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Personaje",
+   "properties": {
+    "name": "Equecles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Personaje",
+   "properties": {
+    "name": "Pisandro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Grupo",
+   "properties": {
+    "name": "mirmidones"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "3",
+   "end_node_id": "4",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "5",
+   "end_node_id": "6",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "8",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "10",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "10",
+   "end_node_id": "11",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "12",
+   "end_node_id": "10",
+   "type": "AMA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "12",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "17",
+   "end_node_id": "18",
+   "type": "PERTENECE_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

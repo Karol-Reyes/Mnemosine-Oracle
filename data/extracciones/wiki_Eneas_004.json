@@ -1,0 +1,331 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Lugar",
+   "properties": {
+    "name": "Laurentio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Lacio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Lugar",
+   "properties": {
+    "name": "Palanteo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Personaje",
+   "properties": {
+    "name": "Latino"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Fauno"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Lavinia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Deidad",
+   "properties": {
+    "name": "Fama"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Personaje",
+   "properties": {
+    "name": "Eneas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Personaje",
+   "properties": {
+    "name": "Turno"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Personaje",
+   "properties": {
+    "name": "Mecencio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Personaje",
+   "properties": {
+    "name": "Diomedes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Lugar",
+   "properties": {
+    "name": "Argos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Personaje",
+   "properties": {
+    "name": "Evandro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Personaje",
+   "properties": {
+    "name": "Palante"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Grupo",
+   "properties": {
+    "name": "rútulos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Grupo",
+   "properties": {
+    "name": "dardanios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ops"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Lugar",
+   "properties": {
+    "name": "Ardea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Personaje",
+   "properties": {
+    "name": "Silvio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Personaje",
+   "properties": {
+    "name": "Dido"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Personaje",
+   "properties": {
+    "name": "Anna Perenna"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "22",
+   "label": "Personaje",
+   "properties": {
+    "name": "Caieta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "23",
+   "label": "Lugar",
+   "properties": {
+    "name": "Gaeta"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "24",
+   "label": "Personaje",
+   "properties": {
+    "name": "Creúsa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "25",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ascanio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "26",
+   "label": "Lugar",
+   "properties": {
+    "name": "Alba Longa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "27",
+   "label": "Personaje",
+   "properties": {
+    "name": "Rómulo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "28",
+   "label": "Personaje",
+   "properties": {
+    "name": "Remo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "29",
+   "label": "Personaje",
+   "properties": {
+    "name": "Rea Silvia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "30",
+   "label": "Lugar",
+   "properties": {
+    "name": "Troya"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "3",
+   "end_node_id": "4",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "5",
+   "type": "ESPOSO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "9",
+   "end_node_id": "9",
+   "type": "MATA_A",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "13",
+   "end_node_id": "12",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "19",
+   "end_node_id": "7",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "19",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "21",
+   "end_node_id": "20",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "7",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "24",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "27",
+   "end_node_id": "29",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "28",
+   "end_node_id": "29",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

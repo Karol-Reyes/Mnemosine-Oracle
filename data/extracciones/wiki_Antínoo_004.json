@@ -1,0 +1,179 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Antínoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Dioniso"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Osiris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Lugar",
+   "properties": {
+    "name": "Egipto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Lugar",
+   "properties": {
+    "name": "Nilo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Lugar",
+   "properties": {
+    "name": "Bitinio-Claudiópolis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Alejandría"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Lugar",
+   "properties": {
+    "name": "Mantinea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Lugar",
+   "properties": {
+    "name": "Arcadia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Lugar",
+   "properties": {
+    "name": "Lanuvium"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Lugar",
+   "properties": {
+    "name": "Lacio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Lugar",
+   "properties": {
+    "name": "Roma"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Lugar",
+   "properties": {
+    "name": "Tívoli"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Personaje",
+   "properties": {
+    "name": "Numenio de Apamea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Personaje",
+   "properties": {
+    "name": "Mesomedes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Personaje",
+   "properties": {
+    "name": "Ateneo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Personaje",
+   "properties": {
+    "name": "Páncrates"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Personaje",
+   "properties": {
+    "name": "Bitinia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Personaje",
+   "properties": {
+    "name": "Adriano"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "5",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "17",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "0",
+   "type": "AYUDA_A",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

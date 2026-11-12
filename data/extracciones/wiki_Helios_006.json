@@ -1,0 +1,779 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Deidad",
+   "properties": {
+    "name": "Helios"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Clímene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Deidad",
+   "properties": {
+    "name": "Antímaco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Egle"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Selene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Neera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Lugar",
+   "properties": {
+    "name": "Trinacia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Faetusa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Deidad",
+   "properties": {
+    "name": "Lampetia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ocírroe"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ceto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Deidad",
+   "properties": {
+    "name": "Astris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Deidad",
+   "properties": {
+    "name": "Éfira"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Deidad",
+   "properties": {
+    "name": "Eetes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Deidad",
+   "properties": {
+    "name": "Cos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Deidad",
+   "properties": {
+    "name": "Clímeno"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Deidad",
+   "properties": {
+    "name": "Etón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Deidad",
+   "properties": {
+    "name": "Erisictón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ega"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Deidad",
+   "properties": {
+    "name": "Icnea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Deidad",
+   "properties": {
+    "name": "Mausolo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Deidad",
+   "properties": {
+    "name": "Forbante"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "22",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ambracia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "23",
+   "label": "Deidad",
+   "properties": {
+    "name": "Estérope"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "24",
+   "label": "Deidad",
+   "properties": {
+    "name": "Pasífae"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "25",
+   "label": "Deidad",
+   "properties": {
+    "name": "Eos"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "26",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hémera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "27",
+   "label": "Deidad",
+   "properties": {
+    "name": "Gea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "28",
+   "label": "Deidad",
+   "properties": {
+    "name": "Bisaltes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "29",
+   "label": "Deidad",
+   "properties": {
+    "name": "Aqueloo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "30",
+   "label": "Deidad",
+   "properties": {
+    "name": "Aqueronte"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "31",
+   "label": "Deidad",
+   "properties": {
+    "name": "Deméter"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "32",
+   "label": "Deidad",
+   "properties": {
+    "name": "Tritopatores"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "33",
+   "label": "Deidad",
+   "properties": {
+    "name": "Atenea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "34",
+   "label": "Deidad",
+   "properties": {
+    "name": "Helena"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "35",
+   "label": "Deidad",
+   "properties": {
+    "name": "Leda"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "36",
+   "label": "Deidad",
+   "properties": {
+    "name": "Cicerón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "37",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ampelio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "38",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "39",
+   "label": "Deidad",
+   "properties": {
+    "name": "Éter"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "40",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hiperión"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "41",
+   "label": "Deidad",
+   "properties": {
+    "name": "Hefesto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "42",
+   "label": "Deidad",
+   "properties": {
+    "name": "Nilo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "43",
+   "label": "Lugar",
+   "properties": {
+    "name": "Heliópolis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "44",
+   "label": "Deidad",
+   "properties": {
+    "name": "Acantón"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "45",
+   "label": "Lugar",
+   "properties": {
+    "name": "Rodas"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "46",
+   "label": "Deidad",
+   "properties": {
+    "name": "Jáliso"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "47",
+   "label": "Deidad",
+   "properties": {
+    "name": "Camiro"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "48",
+   "label": "Deidad",
+   "properties": {
+    "name": "Lindo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "49",
+   "label": "Deidad",
+   "properties": {
+    "name": "Circe"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "50",
+   "label": "Deidad",
+   "properties": {
+    "name": "Medea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "51",
+   "label": "Deidad",
+   "properties": {
+    "name": "Faetón"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "1",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "3",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "5",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "7",
+   "end_node_id": "6",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "8",
+   "end_node_id": "6",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "11",
+   "end_node_id": "10",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "13",
+   "end_node_id": "12",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "14",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "15",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "16",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "18",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "19",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "20",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "21",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "22",
+   "end_node_id": "21",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "23",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "23",
+   "end_node_id": "24",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "25",
+   "end_node_id": "0",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "4",
+   "end_node_id": "0",
+   "type": "HERMANO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "26",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "28",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "28",
+   "end_node_id": "27",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "29",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "29",
+   "end_node_id": "27",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "30",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "30",
+   "end_node_id": "27",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "30",
+   "end_node_id": "31",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "32",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "32",
+   "end_node_id": "27",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "34",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "34",
+   "end_node_id": "35",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "38",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "38",
+   "end_node_id": "39",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "40",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "41",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "41",
+   "end_node_id": "42",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "41",
+   "end_node_id": "43",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "0",
+   "end_node_id": "42",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "44",
+   "end_node_id": "45",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "46",
+   "end_node_id": "44",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "47",
+   "end_node_id": "44",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "48",
+   "end_node_id": "44",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "13",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "49",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "50",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "51",
+   "end_node_id": "0",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

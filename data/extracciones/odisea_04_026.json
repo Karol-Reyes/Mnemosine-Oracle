@@ -1,0 +1,13 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Orestes"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Grupo",
+   "properties": {
+    "name": "feacios"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

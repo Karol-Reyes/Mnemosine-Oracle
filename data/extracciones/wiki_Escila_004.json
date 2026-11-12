@@ -1,0 +1,76 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Criatura",
+   "properties": {
+    "name": "Escila"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Lugar",
+   "properties": {
+    "name": "Regio"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Criatura",
+   "properties": {
+    "name": "Caribdis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Lugar",
+   "properties": {
+    "name": "Mesina"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Forcis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Personaje",
+   "properties": {
+    "name": "Heracles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Criatura",
+   "properties": {
+    "name": "Gerión"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "1",
+   "type": "VIVE_EN",
+   "properties": {},
+   "embedding_properties": {}
+  },
+  {
+   "start_node_id": "6",
+   "end_node_id": "0",
+   "type": "POSEE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

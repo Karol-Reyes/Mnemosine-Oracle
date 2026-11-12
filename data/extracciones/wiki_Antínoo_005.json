@@ -1,0 +1,21 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Antínoo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Adriano"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

@@ -1,0 +1,37 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Criatura",
+   "properties": {
+    "name": "Polifemo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Deidad",
+   "properties": {
+    "name": "Zeus"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Criatura",
+   "properties": {
+    "name": "Escila"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Circe"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}

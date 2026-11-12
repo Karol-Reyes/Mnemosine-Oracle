@@ -1,0 +1,309 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Personaje",
+   "properties": {
+    "name": "Aquiles"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "1",
+   "label": "Personaje",
+   "properties": {
+    "name": "Patroclo"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "2",
+   "label": "Personaje",
+   "properties": {
+    "name": "Antíloco"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "3",
+   "label": "Deidad",
+   "properties": {
+    "name": "Tetis"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "4",
+   "label": "Deidad",
+   "properties": {
+    "name": "Glauce"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "5",
+   "label": "Deidad",
+   "properties": {
+    "name": "Talía"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "6",
+   "label": "Deidad",
+   "properties": {
+    "name": "Cimodoce"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "7",
+   "label": "Deidad",
+   "properties": {
+    "name": "Nesea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "8",
+   "label": "Deidad",
+   "properties": {
+    "name": "Espío"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "9",
+   "label": "Deidad",
+   "properties": {
+    "name": "Toe"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "10",
+   "label": "Deidad",
+   "properties": {
+    "name": "Halia"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "11",
+   "label": "Deidad",
+   "properties": {
+    "name": "Cimotoe"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "12",
+   "label": "Deidad",
+   "properties": {
+    "name": "Actea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "13",
+   "label": "Deidad",
+   "properties": {
+    "name": "Limnorea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "14",
+   "label": "Deidad",
+   "properties": {
+    "name": "Melita"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "15",
+   "label": "Deidad",
+   "properties": {
+    "name": "Yera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "16",
+   "label": "Deidad",
+   "properties": {
+    "name": "Anfitoe"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "17",
+   "label": "Deidad",
+   "properties": {
+    "name": "Agave"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "18",
+   "label": "Deidad",
+   "properties": {
+    "name": "Doto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "19",
+   "label": "Deidad",
+   "properties": {
+    "name": "Proto"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "20",
+   "label": "Deidad",
+   "properties": {
+    "name": "Ferusa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "21",
+   "label": "Deidad",
+   "properties": {
+    "name": "Dinámene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "22",
+   "label": "Deidad",
+   "properties": {
+    "name": "Dexámene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "23",
+   "label": "Deidad",
+   "properties": {
+    "name": "Anfínome"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "24",
+   "label": "Deidad",
+   "properties": {
+    "name": "Calianira"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "25",
+   "label": "Deidad",
+   "properties": {
+    "name": "Doris"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "26",
+   "label": "Deidad",
+   "properties": {
+    "name": "Pánope"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "27",
+   "label": "Deidad",
+   "properties": {
+    "name": "Galatea"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "28",
+   "label": "Deidad",
+   "properties": {
+    "name": "Nemertes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "29",
+   "label": "Deidad",
+   "properties": {
+    "name": "Apseudes"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "30",
+   "label": "Deidad",
+   "properties": {
+    "name": "Calianasa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "31",
+   "label": "Deidad",
+   "properties": {
+    "name": "Climene"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "32",
+   "label": "Deidad",
+   "properties": {
+    "name": "Yanira"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "33",
+   "label": "Deidad",
+   "properties": {
+    "name": "Yanasa"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "34",
+   "label": "Deidad",
+   "properties": {
+    "name": "Mera"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "35",
+   "label": "Deidad",
+   "properties": {
+    "name": "Oritía"
+   },
+   "embedding_properties": {}
+  },
+  {
+   "id": "36",
+   "label": "Deidad",
+   "properties": {
+    "name": "Amatía"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": [
+  {
+   "start_node_id": "0",
+   "end_node_id": "3",
+   "type": "HIJO_DE",
+   "properties": {},
+   "embedding_properties": {}
+  }
+ ]
+}

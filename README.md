@@ -68,6 +68,7 @@ Mnemosine-Oracle/
 │   ├── raw/odisea/
 │   ├── wikipedia/          # artículos descargados
 │   ├── processed/          # cantos normalizados
+│   ├── extracciones/       # salida del LLM por fragmento (caché del grafo)
 │   ├── equivalencias.csv
 │   ├── entidades.csv
 │   └── wikis.txt
@@ -75,7 +76,13 @@ Mnemosine-Oracle/
 │   ├── prepare.py
 │   └── fetch_wikipedia.py
 ├── graph/                  # Fase 2: construcción del grafo
-│   ├── schema.py
+│   ├── schema.py           # tipos de nodo y relación
+│   ├── fuentes.py          # cantos y wikis como documentos
+│   ├── nombres.py          # nombres canónicos
+│   ├── extraccion.py       # prompt, caché y limpieza
+│   ├── neo4j_io.py         # escritura en Neo4j
+│   ├── build.py            # carga el grafo
+│   ├── revisar.py          # revisión del grafo
 │   └── dumps/              # respaldos del grafo
 ├── rag/                    # Fase 3: RAG normal (baseline)
 ├── graphrag/               # Fase 3: retrievers de GraphRAG
@@ -137,7 +144,8 @@ Todos los comandos se corren desde la raíz del repo, con el entorno activado.
 |---|---|---|
 | 1. Preparar cantos | `python -m ingest.prepare` | `data/processed/`: cantos normalizados, `fragmentos.jsonl`, `corpus_entrenamiento.txt` |
 | 2. Descargar Wikipedia | `python -m ingest.fetch_wikipedia` | `data/wikipedia/*.txt` y `_manifest.csv` (revisa las filas marcadas `busqueda`) |
-| 3. Construir el grafo | *Fase 2, en construcción* | |
+| 3. Construir el grafo | `python -m graph.build` | Grafo en Neo4j y `data/extracciones/` |
+| 3b. Revisar el grafo | `python -m graph.revisar` | Conteos, duplicados y vecinos de algunas entidades |
 | 4. RAG y GraphRAG | *Fase 3, en construcción* | |
 | 5. Agente e interfaz | *Fase 4, en construcción* | |
 | 6. Evaluación | *Fase 5, en construcción* | |
@@ -150,13 +158,42 @@ Las traducciones son de 1908-1910 y usan ortografía antigua. `prepare.py` la mo
 
 ## Esquema del grafo
 
-El esquema es fijo *graph/schema.py*, para que el LLM no invente tipos de nodo o de relación en cada fragmento.
+El esquema es fijo en `graph/schema.py`, para que el LLM no invente tipos de nodo o de relación en cada fragmento.
 
 **Nodos:** Deidad, Personaje, Criatura, Lugar, Grupo, Objeto.
 
-**Relaciones:** HIJO_DE, HERMANO_DE, ESPOSO_DE, AMA_A, ENFRENTA_A, AYUDA_A, APOYA_A, ORDENA_A, VIAJA_A, VIVE_EN, PARTENECE_A, CREA, POSEE
+**Relaciones:** HIJO_DE, HERMANO_DE, ESPOSO_DE, AMA_A, ENFRENTA_A, AYUDA_A, APOYA_A, ORDENA_A, VIAJA_A, VIVE_EN, PERTENECE_A, CREA, POSEE
 
-Además, `SimpleKGPipeline` crea el **grafo léxico** (`Document -> Chunk`), y cada entidad queda enlazada con el fragmento del que salió. Así se recupera el libro y el canto de origen.
+Además está el **grafo léxico**: 
+
+```
+(:Chunk)-[:FROM_DOCUMENT]->(:Document)
+```
+Con `NEXT_CHUNK` entre fragmentos seguidos y el embedding de cada fragmento. Cada entidad apunta a los fragmentos donde aparece con `FROM_CHUNK`, y cada relación guarda en `fragmentos` los ids de donde salió y en `menciones` cuántos son. Así se recupera el libro y el canto de origen.
+
+---
+
+## Construcción del grafo
+
+Cada fragmento (unos 1500 caracteres en los cantos, 3000 en las wikis) se manda una vez al LLM con el esquema, la lista de `equivalencias.csv` y un ejemplo. La respuesta se guarda en `data/extracciones/<fragmento>.json`, así que una corrida cortada se retoma sin repetir llamadas, y el grafo se puede reconstruir sin el LLM.
+
+Antes de escribir en Neo4j se limpia la extracción:
+
+- Los nombres pasan a su forma canónica: `Júpiter` -> `Zeus`, `el Pelida` -> `Aquiles`, `los argivos` -> `Aqueos`.
+- Si una extracción trae caracteres corruptos, se vuelve a pedir al LLM.
+- Si la entidad está en `entidades.csv`, se usa ese tipo (Polifemo siempre es `Criatura`). `Hades` como lugar pasa a `Hades (inframundo)`.
+- Se descartan tipos y relaciones que no estén en el esquema.
+- Las entidades se unen por tipo y nombre, sin duplicados entre fragmentos ni documentos.
+
+| Comando | Para qué |
+|---|---|
+| `python -m graph.build --plan` | Ver cuántas llamadas al LLM faltan |
+| `python -m graph.build --solo wikis` | Cargar las wikis |
+| `python -m graph.build --doc iliada_06 --doc odisea_09` | Cargar cantos sueltos (acepta patrones: `odisea_*`) |
+| `python -m graph.build --doc iliada_06 --rehacer` | Volver a extraer con el LLM tras cambiar el prompt |
+| `python -m graph.build --recargar` | Reescribir desde la caché tras cambiar `equivalencias.csv` |
+| `python -m graph.build --reset` | Vaciar Neo4j y cargar todo desde la caché |
+| `python -m graph.build --max-llamadas 200` | Limitar las llamadas de una corrida (cuota diaria) |
 
 ---
 
@@ -197,9 +234,10 @@ Las preguntas se definieron **antes** de construir el grafo, para no sesgarlas h
 
 **Fase 2: grafo (días 3-4)**
 - [x] Esquema fijo (`graph/schema.py`)
-- [ ] Cargar las wikis (esqueleto genealógico)
-- [ ] Cargar un canto por poema y revisar a mano
-- [ ] Cargar el resto y exportar el grafo
+- [x] Carga reanudable y revisión (`graph/build.py`, `graph/revisar.py`)
+- [x] Cargar las wikis (esqueleto genealógico)
+- [x] Cargar un canto por poema y revisar a mano
+- [ ] Cargar el resto y subir `data/extracciones/` al repo como respaldo
 
 **Fase 3: recuperación (días 5-7)**
 - [ ] RAG normal (baseline)
@@ -214,5 +252,3 @@ Las preguntas se definieron **antes** de construir el grafo, para no sesgarlas h
 **Fase 5: cierre (días 12-14)**
 - [ ] Tabla de resultados
 - [ ] Diagrama y diapositivas
-
-> **Regla:** al final del día 7 deben funcionar el grafo y las preguntas. Si hay atraso, se recortan la mini red y la interfaz, nunca el grafo.

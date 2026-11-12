@@ -1,0 +1,13 @@
+{
+ "nodes": [
+  {
+   "id": "0",
+   "label": "Criatura",
+   "properties": {
+    "name": "Sirenas"
+   },
+   "embedding_properties": {}
+  }
+ ],
+ "relationships": []
+}
