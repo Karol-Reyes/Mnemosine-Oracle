@@ -17,8 +17,6 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 7. [Esquema del grafo](#esquema-del-grafo)
 8. [Evaluación](#evaluación)
 9. [Hoja de ruta](#hoja-de-ruta)
-10. [Cobertura del temario](#cobertura-del-temario)
-11. [Licencias y créditos](#licencias-y-créditos)
 
 ---
 
