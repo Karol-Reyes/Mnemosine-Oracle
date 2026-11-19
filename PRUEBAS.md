@@ -223,3 +223,78 @@ Resultado:
 Sarpedón, hijo de Zeus, muere a manos de Patroclo (Ilíada, canto XVI).
   juez: 1.0
 ```
+
+## 17. Agente: pregunta de relaciones
+
+```powershell
+python -m agent.grafo "¿Qué hijo de Zeus muere en la Ilíada y quién lo mata?"
+```
+
+Resultado:
+
+```
+- clasificar: graphrag
+- recuperar: graphrag, 5 fragmentos
+- responder
+
+Sarpedón, hijo de Zeus, muere a manos de Patroclo (Ilíada, canto XVI).
+```
+
+## 18. Agente: pasaje de un canto
+
+```powershell
+python -m agent.grafo "¿Qué pasa con Escila y Caribdis en la Odisea?"
+```
+
+Resultado:
+
+```
+- clasificar: rag
+- recuperar: rag, 5 fragmentos
+- responder
+
+Escila devora a seis compañeros de Odiseo y Caribdis sorbe el agua del mar tres veces al día (Odisea, canto XII).
+```
+
+## 19. Agente: fuera de tema
+
+```powershell
+python -m agent.grafo "¿Cuál es la capital de Francia?"
+```
+
+Resultado:
+
+```
+- clasificar: fuera
+- fuera de tema
+
+Solo puedo responder sobre la Ilíada, la Odisea y la mitología griega relacionada.
+```
+
+## 20. Modelos desde cero
+
+```powershell
+python -m scratch_models.comparar
+```
+
+Resultado:
+
+```
+--- n-gramas ---
+   unigrama   contexto 0   perplejidad ...
+   bigrama    contexto 1   perplejidad ...
+--- mini red ---
+modelo       contexto   perplejidad
+```
+
+## 21. Interfaz
+
+```powershell
+python -m app.main
+```
+
+Resultado:
+
+```
+* Running on local URL:  http://127.0.0.1:7860
+```

@@ -155,7 +155,8 @@ Todos los comandos se corren desde la raíz del repo, con el entorno activado.
 | 3. Construir el grafo | `python -m graph.build` | Grafo en Neo4j y `data/extracciones/` |
 | 3b. Revisar el grafo | `python -m graph.revisar` | Conteos, duplicados y vecinos de algunas entidades |
 | 4. RAG y GraphRAG | `python -m rag.baseline "pregunta"` y `python -m graphrag.retriever "pregunta"` | Contexto recuperado y respuesta con citas (`--solo-contexto` no llama al LLM) |
-| 5. Agente e interfaz | *Fase 4, en construcción* | |
+| 5. Agente e interfaz | `python -m agent.grafo "pregunta"` y `python -m app.main` | Pasos del agente y respuesta; interfaz en http://127.0.0.1:7860 |
+| 5b. Modelos desde cero | `python -m scratch_models.comparar` | Perplejidad del n-grama y la mini red; guarda `scratch_models/checkpoints/mini_red.pt` |
 | 6. Evaluación | `python -m eval.run` | `eval/resultados/resumen.md` (RAG vs GraphRAG por tipo de pregunta) |
 
 ### Normalización del texto

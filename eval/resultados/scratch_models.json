@@ -1,0 +1,30 @@
+{
+  "vocabulario": 4811,
+  "resultados": [
+    {
+      "modelo": "unigrama",
+      "contexto": 0,
+      "perplejidad": 315.0
+    },
+    {
+      "modelo": "bigrama",
+      "contexto": 1,
+      "perplejidad": 223.5
+    },
+    {
+      "modelo": "trigrama",
+      "contexto": 2,
+      "perplejidad": 485.8
+    },
+    {
+      "modelo": "4-grama",
+      "contexto": 3,
+      "perplejidad": 693.2
+    },
+    {
+      "modelo": "mini red",
+      "contexto": 2,
+      "perplejidad": 128.6
+    }
+  ]
+}
