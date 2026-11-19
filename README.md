@@ -92,9 +92,9 @@ Mnemosine-Oracle/
 │   └── dumps/              # respaldos del grafo
 ├── rag/baseline.py         # Fase 3: RAG normal (búsqueda vectorial)
 ├── graphrag/retriever.py   # Fase 3: GraphRAG (entidades + recorrido del grafo)
-├── agent/                  # Fase 4: agente LangGraph
+├── agent/grafo.py          # Fase 4: agente LangGraph (elige RAG o GraphRAG)
 ├── scratch_models/         # Fase 4: n-grama y mini red
-├── app/                    # Fase 4: interfaz Gradio
+├── app/                    # Fase 4: interfaz Gradio (main.py) y formato de respuestas
 └── eval/                   # Fases 3 y 5: preguntas y resultados
     ├── preguntas.json
     ├── run.py
@@ -291,9 +291,9 @@ El puntaje del juez varía entre corridas (el mismo LLM responde y juzga), así 
 - [x] Primera corrida de las 20 preguntas
 
 **Fase 4: agente, modelos e interfaz (días 8-11)**
-- [ ] Agente en LangGraph
-- [ ] N-grama y mini red
-- [ ] Interfaz en Gradio
+- [x] Agente en LangGraph
+- [x] N-grama y mini red
+- [x] Interfaz en Gradio
 
 **Fase 5: cierre (días 12-14)**
 - [ ] Tabla de resultados
