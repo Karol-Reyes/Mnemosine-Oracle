@@ -1,0 +1,24 @@
+origen,relacion,destino,motivo
+Aquiles,HIJO_DE,Zeus,"epíteto ""caro a Júpiter"""
+Héctor,HIJO_DE,Zeus,"epíteto ""caro a Júpiter"""
+Menelao,HIJO_DE,Zeus,"epíteto ""alumno de Júpiter"""
+Eos,HIJO_DE,Zeus,es hija de Hiperión
+Zeus,MATA_A,Odiseo,Zeus parte la balsa con un rayo; Odiseo sobrevive
+Paris,MATA_A,Héctor,"profecía de Héctor sobre Aquiles (Il. XXII)"
+Apolo,MATA_A,Héctor,"profecía y lamento de Hécuba, no lo mata (Il. XXII, XXIV)"
+Ares,MATA_A,Héctor,"lamento de Príamo (Il. XXIV)"
+Héctor,MATA_A,Aquiles,"predicción de Aquiles y lamento por Patroclo (Il. I, XVIII)"
+Aquiles,MATA_A,Patroclo,"sacrificio en expiación de la muerte de Patroclo (Il. XXI)"
+Aquiles,MATA_A,Príamo,"Príamo va a rescatar el cuerpo de Héctor (Il. XXIV)"
+Apolo,MATA_A,Príamo,"relato de Níobe (Il. XXIV)"
+Ártemis,MATA_A,Príamo,"relato de Níobe (Il. XXIV)"
+Ares,MATA_A,Sarpedón,lo mata Patroclo (Il. XVI)
+Atenea,MATA_A,Ares,lo derriba con una piedra pero no muere (Il. XXI)
+Príamo,HIJO_DE,Zeus,"epíteto ""caro a Júpiter"""
+Laógono,HIJO_DE,Zeus,es hijo de Onétor (Il. XVI)
+Odiseo,HIJO_DE,Zeus,"epíteto ""del linaje de Júpiter"""
+Odiseo,HIJO_DE,Telémaco,dirección invertida
+Oto,HIJO_DE,Zeus,en Odisea XI son hijos de Poseidón e Ifimedia
+Oto,HIJO_DE,Leto,en Odisea XI son hijos de Poseidón e Ifimedia
+Efialtes,HIJO_DE,Zeus,en Odisea XI son hijos de Poseidón e Ifimedia
+Efialtes,HIJO_DE,Leto,en Odisea XI son hijos de Poseidón e Ifimedia

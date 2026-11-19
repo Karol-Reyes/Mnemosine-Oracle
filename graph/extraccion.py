@@ -1,8 +1,10 @@
 """Extracción de entidades y relaciones por fragmento, con caché en data/extracciones/."""
 from __future__ import annotations
 
+import csv
 import json
 from dataclasses import dataclass, field
+from functools import lru_cache
 
 from neo4j_graphrag.components.entity_relation_extractor import fix_invalid_json
 from neo4j_graphrag.components.schema import GraphSchema
@@ -16,6 +18,7 @@ from graph.fuentes import Fragmento
 from graph.schema import SCHEMA
 
 CACHE = config.DATA / "extracciones"
+DESCARTADAS = config.DATA / "relaciones_descartadas.csv"
 SIMETRICAS = {"HERMANO_DE", "ESPOSO_DE"}
 
 PROMPT = """Eres un sistema que extrae un grafo de conocimiento de textos de mitología griega en español.
@@ -111,6 +114,15 @@ def extraer(llm, prompt: PromptTemplate, frag: Fragmento, rehacer: bool = False)
     return grafo, True
 
 
+@lru_cache
+def descartadas() -> set[tuple[str, str, str]]:
+    """Relaciones que el LLM extrae mal (epítetos leídos como parentesco, etc.)."""
+    if not DESCARTADAS.exists():
+        return set()
+    with open(DESCARTADAS, encoding="utf-8") as f:
+        return {(r["origen"], r["relacion"], r["destino"]) for r in csv.DictReader(f)}
+
+
 @dataclass
 class Limpio:
     nodos: dict[str, dict] = field(default_factory=dict)
@@ -142,7 +154,8 @@ def limpiar(grafo: Neo4jGraph, frag_id: str, acumulado: Limpio | None = None) ->
 
     for r in grafo.relationships:
         a, b = ids.get(r.start_node_id), ids.get(r.end_node_id)
-        if not a or not b or a[0] == b[0] or (a[1], r.type, b[1]) not in PATRONES:
+        if not a or not b or a[0] == b[0] or (a[1], r.type, b[1]) not in PATRONES \
+                or (a[0].split("|", 1)[1], r.type, b[0].split("|", 1)[1]) in descartadas():
             out.descartados += 1
             continue
         if r.type in SIMETRICAS and b[0] < a[0]:

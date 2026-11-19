@@ -15,8 +15,9 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 5. [Instalación](#instalación)
 6. [Uso paso a paso](#uso-paso-a-paso)
 7. [Esquema del grafo](#esquema-del-grafo)
-8. [Evaluación](#evaluación)
-9. [Hoja de ruta](#hoja-de-ruta)
+8. [Recuperación: RAG y GraphRAG](#recuperación-rag-y-graphrag)
+9. [Evaluación](#evaluación)
+10. [Hoja de ruta](#hoja-de-ruta)
 
 ---
 
@@ -25,7 +26,8 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 | Pieza | Tecnología | Por qué |
 |---|---|---|
 | Base de grafos | Neo4j 5.26 + APOC (Docker) | Requerido por `neo4j-graphrag`; incluye índice vectorial |
-| Extracción del grafo | `neo4j-graphrag` `SimpleKGPipeline` + **Gemini 2.5 Flash** | Capa gratuita de Google AI Studio |
+| Extracción del grafo | `neo4j-graphrag` + **Gemini** (`gemini-3.5-flash-lite`) | Capa gratuita de Google AI Studio; el proveedor se cambia en `.env` |
+| Recuperación | Índice vectorial y Cypher sobre Neo4j | RAG y GraphRAG leen la misma base y los mismos embeddings |
 | Embeddings | `paraphrase-multilingual-MiniLM-L12-v2` | 384 dimensiones; el mismo modelo para RAG y GraphRAG (comparación justa) |
 | Agente | LangGraph | Decide qué herramienta consultar |
 | Interfaz | Gradio | Chat, temperatura, camino recorrido en el grafo |
@@ -62,7 +64,10 @@ Mnemosine-Oracle/
 ├── docker-compose.yml
 ├── requirements.txt
 ├── .env.example
-├── common/config.py        # rutas y variables de entorno
+├── common/
+│   ├── config.py           # rutas y variables de entorno
+│   ├── llm.py              # proveedor del LLM y reintentos
+│   └── respuesta.py        # contexto, citas y prompt de respuesta
 ├── data/
 │   ├── raw/iliada/         # cantos originales
 │   ├── raw/odisea/
@@ -71,6 +76,7 @@ Mnemosine-Oracle/
 │   ├── extracciones/       # salida del LLM por fragmento (caché del grafo)
 │   ├── equivalencias.csv
 │   ├── entidades.csv
+│   ├── relaciones_descartadas.csv
 │   └── wikis.txt
 ├── ingest/                 # Fase 1: preparación de datos
 │   ├── prepare.py
@@ -84,13 +90,15 @@ Mnemosine-Oracle/
 │   ├── build.py            # carga el grafo
 │   ├── revisar.py          # revisión del grafo
 │   └── dumps/              # respaldos del grafo
-├── rag/                    # Fase 3: RAG normal (baseline)
-├── graphrag/               # Fase 3: retrievers de GraphRAG
+├── rag/baseline.py         # Fase 3: RAG normal (búsqueda vectorial)
+├── graphrag/retriever.py   # Fase 3: GraphRAG (entidades + recorrido del grafo)
 ├── agent/                  # Fase 4: agente LangGraph
 ├── scratch_models/         # Fase 4: n-grama y mini red
 ├── app/                    # Fase 4: interfaz Gradio
-└── eval/                   # Fase 5: preguntas y resultados
-    └── preguntas.json
+└── eval/                   # Fases 3 y 5: preguntas y resultados
+    ├── preguntas.json
+    ├── run.py
+    └── resultados/         # respuestas.json, resumen.md, recuperacion.md
 ```
 
 ---
@@ -146,9 +154,9 @@ Todos los comandos se corren desde la raíz del repo, con el entorno activado.
 | 2. Descargar Wikipedia | `python -m ingest.fetch_wikipedia` | `data/wikipedia/*.txt` y `_manifest.csv` (revisa las filas marcadas `busqueda`) |
 | 3. Construir el grafo | `python -m graph.build` | Grafo en Neo4j y `data/extracciones/` |
 | 3b. Revisar el grafo | `python -m graph.revisar` | Conteos, duplicados y vecinos de algunas entidades |
-| 4. RAG y GraphRAG | *Fase 3, en construcción* | |
+| 4. RAG y GraphRAG | `python -m rag.baseline "pregunta"` y `python -m graphrag.retriever "pregunta"` | Contexto recuperado y respuesta con citas (`--solo-contexto` no llama al LLM) |
 | 5. Agente e interfaz | *Fase 4, en construcción* | |
-| 6. Evaluación | *Fase 5, en construcción* | |
+| 6. Evaluación | `python -m eval.run` | `eval/resultados/resumen.md` (RAG vs GraphRAG por tipo de pregunta) |
 
 ### Normalización del texto
 
@@ -182,7 +190,7 @@ Antes de escribir en Neo4j se limpia la extracción:
 - Los nombres pasan a su forma canónica: `Júpiter` -> `Zeus`, `el Pelida` -> `Aquiles`, `los argivos` -> `Aqueos`.
 - Si una extracción trae caracteres corruptos, se vuelve a pedir al LLM.
 - Si la entidad está en `entidades.csv`, se usa ese tipo (Polifemo siempre es `Criatura`). `Hades` como lugar pasa a `Hades (inframundo)`.
-- Se descartan tipos y relaciones que no estén en el esquema.
+- Se descartan tipos y relaciones que no estén en el esquema, y las de `data/relaciones_descartadas.csv`: errores revisados a mano, como epítetos leídos como parentesco ("Aquiles, caro a Júpiter" no es `Aquiles -HIJO_DE-> Zeus`). Tras editarla: `python -m graph.build --recargar`.
 - Las entidades se unen por tipo y nombre, sin duplicados entre fragmentos ni documentos.
 
 | Comando | Para qué |
@@ -197,6 +205,24 @@ Antes de escribir en Neo4j se limpia la extracción:
 
 ---
 
+## Recuperación: RAG y GraphRAG
+
+Los dos sistemas responden con el mismo LLM, el mismo prompt (`common/respuesta.py`) y **5 fragmentos** de texto. La diferencia está en cómo se eligen esos fragmentos y en que GraphRAG añade hechos del grafo.
+
+**RAG normal** (`rag/baseline.py`): embebe la pregunta y trae los 5 fragmentos más parecidos del índice vectorial `fragmentos_embedding`.
+
+**GraphRAG** (`graphrag/retriever.py`):
+
+1. Busca en la pregunta los nombres de entidades del grafo, también por sus equivalencias (`Ulises` -> Odiseo, `troyanos` -> Troyanos), y palabras que piden un tipo de relación (`mata` -> `MATA_A`, `abuelo` -> `HIJO_DE`) o de entidad (`dioses` -> `Deidad`).
+
+2. Hechos: las relaciones de cada entidad (primero las del tipo pedido y en la dirección que pide la pregunta: en `¿Quién mata a Héctor?` van primero las que terminan en Héctor; luego por `menciones`), caminos de dos saltos solo si la pregunta encadena relaciones (`abuelo`, `hijo de Zeus que muere`: Zeus <-HIJO_DE- Sarpedón <-MATA_A- Patroclo) y entidades puente entre dos de la pregunta. Cada hecho lleva cuántos fragmentos lo respaldan (`x6`) y los cantos de donde salió, para que el LLM prefiera el mejor respaldado si dos se contradicen.
+3. Entidades: en qué cantos aparece cada una y con qué otros nombres. Si la pregunta pide un tipo (`¿qué dioses aparecen en ambos poemas?`), lista las de ese tipo presentes en los poemas nombrados.
+4. Fragmentos: los que sustentan esos hechos o nombran a las entidades, ordenados por parecido con la pregunta (con un pequeño bono si nombran a varias). Si la pregunta nombra un solo poema, se filtran a ese poema y Wikipedia; si nombra los dos, se intercalan. Si faltan, se completa con búsqueda vectorial.
+
+```powershell
+python -m graphrag.retriever "¿Qué hijo de Zeus muere en la Ilíada y quién lo mata?" --solo-contexto
+```
+
 ## Evaluación
 
 `eval/preguntas.json` tiene **20 preguntas** con su respuesta esperada y los cantos donde está la evidencia:
@@ -207,14 +233,33 @@ Antes de escribir en Neo4j se limpia la extracción:
 | `hibrida` | 8 | Poema + Wikipedia, o dos saltos en el grafo |
 | `control` | 4 | Un solo canto (el RAG normal debería acertarlas) |
 
-Las preguntas se definieron **antes** de construir el grafo, para no sesgarlas hacia lo que el grafo ya contesta bien. Cada respuesta esperada se verifica contra el texto (campo `verificada`).
+Las preguntas se definieron *antes* de construir el grafo, para no sesgarlas hacia lo que el grafo ya contesta bien. Cada respuesta esperada se verifica contra el texto (campo `verificada`).
 
 **Métricas:**
 
-1. Aciertos de RAG normal vs. GraphRAG, por tipo de pregunta.
-2. Pérdida y perplejidad del n-grama y la mini red frente a un transformer.
+1. **Recall de evidencia** (sin LLM): fracción de los cantos de `evidencia` que llegan al contexto como fragmentos de texto.
+2. **Puntaje del juez**: un LLM compara cada respuesta con `respuesta_esperada` (1 correcta, 0.5 parcial, 0 incorrecta).
+3. Tiempo de recuperación + respuesta.
+4. Pérdida y perplejidad del n-grama y la mini red frente a un transformer (Fase 4).
 
-*Resultados: pendientes.*
+| Comando | Para qué |
+|---|---|
+| `python -m eval.run --solo-recuperacion` | Recall de los dos sistemas sin gastar llamadas (`recuperacion.md`) |
+| `python -m eval.run` | Respuestas + juez para las 20 preguntas (unas 80 llamadas; se retoma si se corta) |
+| `python -m eval.run --pregunta q14 --modo graphrag --rehacer` | Repetir una pregunta tras un cambio |
+| `python -m eval.run --sin-juez` | Solo respuestas |
+| `python -m eval.run --resumen` | Rehacer `resumen.md` con lo guardado |
+
+**Resultados** (20 preguntas, `gemini-3.5-flash-lite`; detalle en `eval/resultados/resumen.md`):
+
+| Tipo | n | RAG: puntaje | GraphRAG: puntaje | RAG: recall | GraphRAG: recall |
+|---|---|---|---|---|---|
+| cruce | 8 | 0.25 | 0.75 | 0.26 | 0.86 |
+| hibrida | 8 | 0.06 | 0.81 | 0.14 | 0.71 |
+| control | 4 | 0.50 | 1.00 | 0.50 | 1.00 |
+| total | 20 | 0.23 | 0.82 | 0.27 | 0.83 |
+
+El puntaje del juez varía entre corridas (el mismo LLM responde y juzga), así que el recall es la métrica más estable. Límites conocidos de GraphRAG: en `q09` y `q10` (hijos de Zeus) la lista de hechos se corta antes de llegar a todos, y algunas frases mezclan relaciones del grafo mal extraídas (`q08`, `q15`).
 
 ---
 
@@ -240,9 +285,9 @@ Las preguntas se definieron **antes** de construir el grafo, para no sesgarlas h
 - [x] Cargar el resto y subir `data/extracciones/` al repo como respaldo
 
 **Fase 3: recuperación (días 5-7)**
-- [ ] RAG normal (baseline)
-- [ ] GraphRAG con retrievers de Neo4j
-- [ ] Primera corrida de las 20 preguntas
+- [x] RAG normal (baseline)
+- [x] GraphRAG con retrievers de Neo4j
+- [x] Primera corrida de las 20 preguntas
 
 **Fase 4: agente, modelos e interfaz (días 8-11)**
 - [ ] Agente en LangGraph
