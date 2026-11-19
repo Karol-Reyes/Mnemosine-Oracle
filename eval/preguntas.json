@@ -1,42 +1,420 @@
 [
-  {"id": "q01", "tipo": "cruce", "pregunta": "¿Qué dioses aparecen tanto en la Ilíada como en la Odisea?",
-   "evidencia": ["todos los cantos"], "respuesta_esperada": "Zeus, Atenea, Hera, Poseidón, Apolo, Ares, Hefesto, Hermes, Afrodita, Ártemis, Hades y Eos (según los cantos seleccionados).", "verificada": false},
-  {"id": "q02", "tipo": "cruce", "pregunta": "¿Qué se cuenta de Hefesto en la Ilíada y en la Odisea?",
-   "evidencia": ["Ilíada 18", "Odisea 8"], "respuesta_esperada": "En la Ilíada XVIII forja las nuevas armas de Aquiles a pedido de Tetis; en la Odisea VIII, Demódoco canta cómo atrapa con una red a Ares y Afrodita.", "verificada": false},
-  {"id": "q03", "tipo": "cruce", "pregunta": "¿Dónde aparece Aquiles en la Odisea y qué se dice de él?",
-   "evidencia": ["Odisea 11"], "respuesta_esperada": "En la Odisea XI Ulises encuentra su sombra en el Hades; Aquiles dice que preferiría ser siervo en la tierra a reinar entre los muertos y pregunta por su hijo.", "verificada": false},
-  {"id": "q04", "tipo": "cruce", "pregunta": "¿Qué papel tiene Hermes en la Ilíada y en la Odisea?",
-   "evidencia": ["Ilíada 24", "Odisea 5"], "respuesta_esperada": "En la Ilíada XXIV guía a Príamo hasta la tienda de Aquiles; en la Odisea V lleva a Calipso la orden de Zeus de liberar a Ulises.", "verificada": false},
-  {"id": "q05", "tipo": "cruce", "pregunta": "¿Qué relación tiene Agamenón con cada poema?",
-   "evidencia": ["Ilíada 1", "Odisea 4", "Odisea 11"], "respuesta_esperada": "En la Ilíada I disputa con Aquiles por Briseida; en la Odisea IV y XI se cuenta que al volver fue asesinado por Egisto (con Clitemnestra).", "verificada": false},
-  {"id": "q06", "tipo": "cruce", "pregunta": "¿Dónde aparecen Menelao y Helena en cada poema?",
-   "evidencia": ["Ilíada 3", "Odisea 4"], "respuesta_esperada": "En la Ilíada III Menelao combate contra Paris mientras Helena mira desde la muralla; en la Odisea IV ambos reciben a Telémaco en Esparta.", "verificada": false},
-  {"id": "q07", "tipo": "cruce", "pregunta": "¿Qué personajes de la Ilíada encuentra Ulises en el Hades?",
-   "evidencia": ["Odisea 11"], "respuesta_esperada": "Agamenón, Aquiles y Áyax (que no le habla).", "verificada": false},
-  {"id": "q08", "tipo": "cruce", "pregunta": "¿Quién es el esposo de Helena y quién la llevó a Troya?",
-   "evidencia": ["Ilíada 3", "Odisea 4"], "respuesta_esperada": "Su esposo es Menelao; la llevó Paris (Alejandro).", "verificada": false},
-  {"id": "q09", "tipo": "hibrida", "pregunta": "¿Qué dioses apoyan a los troyanos en la Ilíada y qué parentesco tienen con Zeus?",
-   "evidencia": ["Ilíada 21", "wikis"], "respuesta_esperada": "Apolo, Ártemis, Ares, Afrodita (y Leto). Apolo, Ártemis, Ares y Afrodita son hijos de Zeus; Leto es madre de Apolo y Ártemis.", "verificada": false},
-  {"id": "q10", "tipo": "hibrida", "pregunta": "¿Qué hijos de Zeus aparecen en la Odisea?",
-   "evidencia": ["Odisea", "wikis"], "respuesta_esperada": "Atenea, Apolo, Ares, Hefesto, Hermes, Afrodita y Ártemis (entre los seleccionados).", "verificada": false},
-  {"id": "q11", "tipo": "hibrida", "pregunta": "¿Cuál es el equivalente romano de Ares y qué hace en cada poema?",
-   "evidencia": ["Ilíada 21", "Odisea 8", "equivalencias"], "respuesta_esperada": "Marte. En la Ilíada XXI combate y Atenea lo derriba con una piedra; en la Odisea VIII Hefesto lo atrapa con Afrodita.", "verificada": false},
-  {"id": "q12", "tipo": "hibrida", "pregunta": "¿De quién es hijo Ulises y qué hace Atenea por él en la Odisea?",
-   "evidencia": ["Odisea 1", "Odisea 5", "wikis"], "respuesta_esperada": "Es hijo de Laertes (y Anticlea). Atenea pide a Zeus su regreso, aconseja a Telémaco y lo protege.", "verificada": false},
-  {"id": "q13", "tipo": "hibrida", "pregunta": "¿Qué dios está enojado con Ulises y por qué?",
-   "evidencia": ["Odisea 1", "Odisea 9"], "respuesta_esperada": "Poseidón, porque Ulises cegó a su hijo Polifemo.", "verificada": false},
-  {"id": "q14", "tipo": "hibrida", "pregunta": "¿Qué hijo de Zeus muere en la Ilíada y quién lo mata?",
-   "evidencia": ["Ilíada 16"], "respuesta_esperada": "Sarpedón, a manos de Patroclo.", "verificada": false},
-  {"id": "q15", "tipo": "hibrida", "pregunta": "¿Quién es la madre de Aquiles y qué hace por él en la Ilíada?",
-   "evidencia": ["Ilíada 1", "Ilíada 18", "wikis"], "respuesta_esperada": "Tetis. Pide a Zeus que favorezca a los troyanos (I) y consigue de Hefesto nuevas armas (XVIII).", "verificada": false},
-  {"id": "q16", "tipo": "hibrida", "pregunta": "¿Quién es el padre de Telémaco y quién es su abuelo paterno?",
-   "evidencia": ["Odisea 1", "wikis"], "respuesta_esperada": "Ulises; su abuelo es Laertes.", "verificada": false},
-  {"id": "q17", "tipo": "control", "pregunta": "¿Quién mata a Héctor y en qué canto?",
-   "evidencia": ["Ilíada 22"], "respuesta_esperada": "Aquiles, en el canto XXII de la Ilíada.", "verificada": false},
-  {"id": "q18", "tipo": "control", "pregunta": "¿Quién mata a Patroclo?",
-   "evidencia": ["Ilíada 16"], "respuesta_esperada": "Héctor, después de que Apolo lo golpea y Euforbo lo hiere.", "verificada": false},
-  {"id": "q19", "tipo": "control", "pregunta": "¿Qué pasa con Escila y Caribdis en la Odisea?",
-   "evidencia": ["Odisea 12"], "respuesta_esperada": "Ulises pasa entre ambas; Escila devora a seis compañeros.", "verificada": false},
-  {"id": "q20", "tipo": "control", "pregunta": "¿Quién advierte a Ulises sobre las Sirenas y cómo las evita?",
-   "evidencia": ["Odisea 12"], "respuesta_esperada": "Circe. Tapa con cera los oídos de sus compañeros y se hace atar al mástil.", "verificada": false}
+  {
+    "id": "q01",
+    "tipo": "cruce",
+    "pregunta": "¿Qué dioses aparecen tanto en la Ilíada como en la Odisea?",
+    "evidencia": [
+      "todos los cantos"
+    ],
+    "respuesta_esperada": "Zeus, Atenea, Hera, Poseidón, Apolo, Ares, Hefesto, Hermes, Afrodita, Ártemis, Hades y Eos (según los cantos seleccionados).",
+    "verificada": false,
+    "pasaje_fuente": "iliada_01",
+    "pasaje": "Dando profundos suspiros, contestó Aquiles, el de los pies ligeros: «Lo sabes. ¿A qué referirte lo que ya conoces? Fuimos a Tebas, la sagrada ciudad de Eetión; la saqueamos, y el botín que trajimos se lo distribuyeron equitativamente los aqueos, separando para el Atrida a Criseida, la de hermosas mejillas. Luego Crises, sacerdote del flechador Apolo, queriendo redimir a su hija, se presentó en las veleras naves aqueas con inmenso rescate y las ínfulas del flechador Apolo, que pendían de áureo cetro, en la mano; y suplicó a todos los aqueos, y particularmente a los dos Atridas, caudillos de pue",
+    "nombres_buscados": [
+      "Zeus",
+      "Atenea",
+      "Hera",
+      "Poseidón",
+      "Apolo",
+      "Ares",
+      "Hefesto",
+      "Hermes",
+      "Afrodita",
+      "Ártemis",
+      "Hades",
+      "Eos"
+    ],
+    "nombres_juntos": 5
+  },
+  {
+    "id": "q02",
+    "tipo": "cruce",
+    "pregunta": "¿Qué se cuenta de Hefesto en la Ilíada y en la Odisea?",
+    "evidencia": [
+      "Ilíada 18",
+      "Odisea 8"
+    ],
+    "respuesta_esperada": "En la Ilíada XVIII forja las nuevas armas de Aquiles a pedido de Tetis; en la Odisea VIII, Demódoco canta cómo atrapa con una red a Ares y Afrodita.",
+    "verificada": false,
+    "pasaje_fuente": "iliada_18",
+    "pasaje": "Respondióle Tetis, derramando lágrimas: «¡Oh Vulcano! ¿Hay alguna entre las diosas del Olimpo que haya sufrido en su ánimo tantos y tan graves pesares como a mí me ha enviado el Saturnio Jove? De las ninfas del mar, únicamente a mí me sujetó a un hombre, a Peleo Eácida, y tuve que tolerar, contra toda mi voluntad, el tálamo de un mortal que yace en el palacio, rendido a la triste vejez. Ahora me envía otros males: concedióme que pariera y alimentara a un hijo insigne entre los héroes, que creció semejante a un árbol, le crié como a una planta en terreno fértil y lo mandé a Ilión en las corvas ",
+    "nombres_buscados": [
+      "Hefesto",
+      "Aquiles",
+      "Tetis",
+      "Demódoco",
+      "Ares",
+      "Afrodita"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q03",
+    "tipo": "cruce",
+    "pregunta": "¿Dónde aparece Aquiles en la Odisea y qué se dice de él?",
+    "evidencia": [
+      "Odisea 11"
+    ],
+    "respuesta_esperada": "En la Odisea XI Ulises encuentra su sombra en el Hades; Aquiles dice que preferiría ser siervo en la tierra a reinar entre los muertos y pregunta por su hijo.",
+    "verificada": true,
+    "pasaje_fuente": "odisea_11",
+    "pasaje": "«¡Laertíada, de jovial linaje! ¡Ulises, fecundo en recursos! ¡Desdichado! ¿Qué otra empresa mayor que las pasadas revuelves en tu espíritu? ¿Cómo te atreves a bajar al Orco donde residen los muertos, que están privados de sentido y son imágenes de los hombres que ya fallecieron?»",
+    "nombres_buscados": [
+      "Dónde",
+      "Aquiles",
+      "Ulises",
+      "Hades"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q04",
+    "tipo": "cruce",
+    "pregunta": "¿Qué papel tiene Hermes en la Ilíada y en la Odisea?",
+    "evidencia": [
+      "Ilíada 24",
+      "Odisea 5"
+    ],
+    "respuesta_esperada": "En la Ilíada XXIV guía a Príamo hasta la tienda de Aquiles; en la Odisea V lleva a Calipso la orden de Zeus de liberar a Ulises.",
+    "verificada": false,
+    "pasaje_fuente": "iliada_24",
+    "pasaje": "«Cobra ánimo, Príamo Dardánida, y no te espantes; que no vengo a presagiarte males, sino a participarte cosas buenas: soy mensajera de Júpiter, que aun estando lejos, se interesa mucho por ti y te compadece. El Olímpico te manda rescatar al divino Héctor, llevando a Aquiles dones que aplaquen su enojo; ve solo y ningún troyano se te junte. Te acompañe un heraldo más viejo que tú, para que guíe los mulos y el carro de hermosas ruedas y conduzca luego a la población el cadáver de aquel a quien mató el divino Aquiles. Ni la idea de la muerte ni otro temor alguno conturbe tu ánimo, pues tendrás po",
+    "nombres_buscados": [
+      "Hermes",
+      "Príamo",
+      "Aquiles",
+      "Calipso",
+      "Zeus",
+      "Ulises"
+    ],
+    "nombres_juntos": 4
+  },
+  {
+    "id": "q05",
+    "tipo": "cruce",
+    "pregunta": "¿Qué relación tiene Agamenón con cada poema?",
+    "evidencia": [
+      "Ilíada 1",
+      "Odisea 4",
+      "Odisea 11"
+    ],
+    "respuesta_esperada": "En la Ilíada I disputa con Aquiles por Briseida; en la Odisea IV y XI se cuenta que al volver fue asesinado por Egisto (con Clitemnestra).",
+    "verificada": false,
+    "pasaje_fuente": "iliada_01",
+    "pasaje": "En tales cosas ocupábase el ejército. Agamenón no olvidó la amenaza que en la contienda hiciera a Aquiles, y dijo a Taltibio y Euríbates, sus heraldos y diligentes servidores: «Id a la tienda del Pelida Aquiles, y asiendo de la mano a Briseida, la de hermosas mejillas, traedla acá; y si no os la diere, iré yo con otros a quitársela y todavía le será más duro.»",
+    "nombres_buscados": [
+      "Agamenón",
+      "Aquiles",
+      "Briseida",
+      "Egisto",
+      "Clitemnestra"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q06",
+    "tipo": "cruce",
+    "pregunta": "¿Dónde aparecen Menelao y Helena en cada poema?",
+    "evidencia": [
+      "Ilíada 3",
+      "Odisea 4"
+    ],
+    "respuesta_esperada": "En la Ilíada III Menelao combate contra Paris mientras Helena mira desde la muralla; en la Odisea IV ambos reciben a Telémaco en Esparta.",
+    "verificada": true,
+    "pasaje_fuente": "iliada_03",
+    "pasaje": "Así decían. El gran Héctor, de tremolante casco, agitaba las suertes volviendo el rostro atrás: pronto saltó la de Paris. Sentáronse los guerreros, sin romper las filas, donde cada uno tenía los briosos corceles y las labradas armas. El divino Alejandro, esposo de Helena, la de hermosa cabellera, vistió una magnífica armadura: púsose en las piernas elegantes grebas ajustadas con broches de plata; protegió el pecho con la coraza de su hermano Licaón, que se le acomodaba bien; colgó del hombro una espada de bronce guarnecida con clavos de plata; embrazó el grande y fuerte escudo; cubrió la robus",
+    "nombres_buscados": [
+      "Dónde",
+      "Menelao",
+      "Helena",
+      "Paris",
+      "Telémaco",
+      "Esparta"
+    ],
+    "nombres_juntos": 4
+  },
+  {
+    "id": "q07",
+    "tipo": "cruce",
+    "pregunta": "¿Qué personajes de la Ilíada encuentra Ulises en el Hades?",
+    "evidencia": [
+      "Odisea 11"
+    ],
+    "respuesta_esperada": "Agamenón, Aquiles y Áyax (que no le habla).",
+    "verificada": true,
+    "pasaje_fuente": "odisea_11",
+    "pasaje": "»Así le hablé; y él, dando un suspiro, me respondió con estas palabras: «¡Laertíada, de jovial linaje! ¡Ulises, fecundo en recursos! Dañáronme la mala voluntad de algún dios y el exceso de vino. Habiéndome acostado en la mansión de Circe, no pensé en volver atrás, a fin de bajar por la larga escalera, y caí desde el techo; se me rompieron las vértebras del cuello, y mi alma descendió al Orco. Ahora te suplico en nombre de los que se quedaron en tu casa y no están presentes, — de tu esposa, de tu padre, que te crió cuando eras niño, y de Telémaco, el único vástago que dejaste en el palacio: — s",
+    "nombres_buscados": [
+      "Ulises",
+      "Hades",
+      "Agamenón",
+      "Aquiles",
+      "Áyax"
+    ],
+    "nombres_juntos": 2
+  },
+  {
+    "id": "q08",
+    "tipo": "cruce",
+    "pregunta": "¿Quién es el esposo de Helena y quién la llevó a Troya?",
+    "evidencia": [
+      "Ilíada 3",
+      "Odisea 4"
+    ],
+    "respuesta_esperada": "Su esposo es Menelao; la llevó Paris (Alejandro).",
+    "verificada": true,
+    "pasaje_fuente": "iliada_03",
+    "pasaje": "Respondióle el deiforme Alejandro: «¡Héctor! Con motivo me increpas y no más de lo justo; pero tu corazón es inflexible como el hacha que hiende un leño y multiplica la fuerza de quien la maneja hábilmente para cortar maderos de navío: tan intrépido es el ánimo que en tu pecho se encierra. No me reproches los amables dones de la dorada Venus, que no son despreciables los eximios presentes de los dioses y nadie puede escogerlos a su gusto. Y si ahora quieres que luche y combata, detén a los demás teucros y a los aqueos todos, y dejadnos en medio a Menelao, caro a Marte, y a mí para que peleemos",
+    "nombres_buscados": [
+      "Helena",
+      "Troya",
+      "Menelao",
+      "Paris",
+      "Alejandro"
+    ],
+    "nombres_juntos": 5
+  },
+  {
+    "id": "q09",
+    "tipo": "hibrida",
+    "pregunta": "¿Qué dioses apoyan a los troyanos en la Ilíada y qué parentesco tienen con Zeus?",
+    "evidencia": [
+      "Ilíada 21",
+      "wikis"
+    ],
+    "respuesta_esperada": "Apolo, Ártemis, Ares, Afrodita (y Leto). Apolo, Ártemis, Ares y Afrodita son hijos de Zeus; Leto es madre de Apolo y Ártemis.",
+    "verificada": false,
+    "pasaje_fuente": "wiki:Ares",
+    "pasaje": "=== La guerra de Troya ===\nEn la Ilíada, Homero cuenta que Ares peleó para un bando y luego para el otro para recompensar el coraje de ambos lados: prometió a su hermana Atenea y a su madre Hera que lucharía del lado de los aqueos junto a Aquiles,​ pero Afrodita y Apolo lo convencieron para que luchase con ellos del lado de Paris y los troyanos.​\nEn la batalla, Diomedes sorprendido al ver a Ares luchando en el bando troyano ordenó a sus soldados la retirada. Hera vio la desproporción del combate y pidió a Zeus que interviniera para alejarlo del campo de batalla. Ares atacó a Diomedes con su la",
+    "nombres_buscados": [
+      "Zeus",
+      "Apolo",
+      "Ártemis",
+      "Ares",
+      "Afrodita",
+      "Leto"
+    ],
+    "nombres_juntos": 4
+  },
+  {
+    "id": "q10",
+    "tipo": "hibrida",
+    "pregunta": "¿Qué hijos de Zeus aparecen en la Odisea?",
+    "evidencia": [
+      "Odisea",
+      "wikis"
+    ],
+    "respuesta_esperada": "Atenea, Apolo, Ares, Hefesto, Hermes, Afrodita y Ártemis (entre los seleccionados).",
+    "verificada": false,
+    "pasaje_fuente": "wiki:Hefesto",
+    "pasaje": "== Matrimonio entre Hefesto y Afrodita ==\nFama es que Hefesto estaba desposado Afrodita pero este matrimonio bien podría definirse como ‘de conveniencia’.​ Se dice que Zeus, padre de Afrodita, le había concedido la mano de su hija a Hefesto. Este construyó para la diosa una magnífica mansión​ pero ninguna fuente griega afirma que tuvieran descendencia.​​ Hefesto nunca fue afortunado en el amor. De hecho, en la tradición clásica es recurrente el motivo de la infidelidad de Afrodita con Ares, causando una humillación visible a Hefesto.​ \nEl famoso mito del adulterio es narrado en la Odisea. Se d",
+    "nombres_buscados": [
+      "Zeus",
+      "Atenea",
+      "Apolo",
+      "Ares",
+      "Hefesto",
+      "Hermes",
+      "Afrodita",
+      "Ártemis"
+    ],
+    "nombres_juntos": 7
+  },
+  {
+    "id": "q11",
+    "tipo": "hibrida",
+    "pregunta": "¿Cuál es el equivalente romano de Ares y qué hace en cada poema?",
+    "evidencia": [
+      "Ilíada 21",
+      "Odisea 8",
+      "equivalencias"
+    ],
+    "respuesta_esperada": "Marte. En la Ilíada XXI combate y Atenea lo derriba con una piedra; en la Odisea VIII Hefesto lo atrapa con Afrodita.",
+    "verificada": false,
+    "pasaje_fuente": "equivalencias",
+    "pasaje": "nombre_en_texto,entidad,nota\nJúpiter,Zeus,\nJove,Zeus,\nSaturnio,Zeus,epíteto (hijo de Saturno)\nOlímpico,Zeus,epíteto\nMinerva,Atenea,\nPalas,Atenea,suele ir junto a Minerva: no contar doble\nTritogenia,Atenea,epíteto\nJuno,Hera,\nNeptuno,Poseidón,\nMarte,Ares,\nVenus,Afrodita,\nVulcano,Hefesto,\nMercurio,Hermes,\nArgicida,Hermes,epíteto\nFebo,Apolo,\nFlechador,Apolo,epíteto\nDiana,Ártemis,\nLatona,Leto,\nPlutón,Hades,\nOrco,Hades,también puede significar el inframundo\nProserpina,Perséfone,\nAurora,Eos,\nSol,Helios,solo cuando es el dios (Odisea XII); si es el astro no se enlaza\nHiperión,Helios,epíteto en la Odis",
+    "nombres_buscados": [
+      "Cuál",
+      "Ares",
+      "Marte",
+      "Atenea",
+      "Hefesto",
+      "Afrodita"
+    ],
+    "nombres_juntos": 5
+  },
+  {
+    "id": "q12",
+    "tipo": "hibrida",
+    "pregunta": "¿De quién es hijo Ulises y qué hace Atenea por él en la Odisea?",
+    "evidencia": [
+      "Odisea 1",
+      "Odisea 5",
+      "wikis"
+    ],
+    "respuesta_esperada": "Es hijo de Laertes (y Anticlea). Atenea pide a Zeus su regreso, aconseja a Telémaco y lo protege.",
+    "verificada": false,
+    "pasaje_fuente": "wiki:Odiseo",
+    "pasaje": "Odiseo o Ulises (en griego clásico: Ὀδυσσεύς;​​ Ulixes en latín)​​ fue uno de los héroes legendarios de la mitología griega. Aparece especialmente como protagonista epónimo de la Odisea pero también es un personaje destacado de la Ilíada, ambas obras atribuidas a Homero. Aparecía también en varios poemas perdidos del llamado ciclo troyano y posteriormente en muchas otras obras.​ \nEra rey de Ítaca, una de las actuales islas Jónicas, situada frente a la costa occidental de Grecia. En la tradición homérica se nos presenta como hijo de Laertes y Anticlea, esposo de Penélope y padre de Telémaco. Su",
+    "nombres_buscados": [
+      "Ulises",
+      "Atenea",
+      "Es",
+      "Laertes",
+      "Anticlea",
+      "Zeus",
+      "Telémaco"
+    ],
+    "nombres_juntos": 5
+  },
+  {
+    "id": "q13",
+    "tipo": "hibrida",
+    "pregunta": "¿Qué dios está enojado con Ulises y por qué?",
+    "evidencia": [
+      "Odisea 1",
+      "Odisea 9"
+    ],
+    "respuesta_esperada": "Poseidón, porque Ulises cegó a su hijo Polifemo.",
+    "verificada": true,
+    "pasaje_fuente": "odisea_01",
+    "pasaje": "Contestóle Júpiter, que amontona las nubes: «¡Hija mía! ¡Qué palabras se te escaparon del cerco de los dientes! ¿Cómo quieres que ponga en olvido al divinal Ulises, que por su inteligencia se señala sobre los demás mortales y siempre ofreció muchos sacrificios a los inmortales dioses que poseen el anchuroso cielo? Pero Neptuno, que ciñe la tierra, le guarda vivo y constante rencor porque cegó al ciclope, al deiforme Polifemo; que es el más fuerte de todos los ciclopes y nació de la ninfa Toosa, hija de Forcis que impera en el mar estéril, después que ésta se ayuntara con Neptuno en honda cueva",
+    "nombres_buscados": [
+      "Ulises",
+      "Poseidón",
+      "Polifemo"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q14",
+    "tipo": "hibrida",
+    "pregunta": "¿Qué hijo de Zeus muere en la Ilíada y quién lo mata?",
+    "evidencia": [
+      "Ilíada 16"
+    ],
+    "respuesta_esperada": "Sarpedón, a manos de Patroclo.",
+    "verificada": true,
+    "pasaje_fuente": "iliada_16",
+    "pasaje": "Respondióle Juno veneranda, la de los ojos grandes: «¡Terribilísimo Saturnio, qué palabras proferiste! ¿Una vez más quieres librar de la muerte horrísona a ese hombre mortal, a quien tiempo ha que el hado condenó a morir? Hazlo, pero no todos los dioses te lo aprobaremos. Otra cosa voy a decirte, que fijarás en la memoria: Piensa que si a Sarpedón le mandas vivo a su palacio, algún otro dios querrá sacar a su hijo del duro combate, pues muchos hijos de los inmortales pelean en torno de la gran ciudad de Príamo, y harás que sus padres se enciendan en terrible ira. Pero si Sarpedón te es caro y ",
+    "nombres_buscados": [
+      "Zeus",
+      "Sarpedón",
+      "Patroclo"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q15",
+    "tipo": "hibrida",
+    "pregunta": "¿Quién es la madre de Aquiles y qué hace por él en la Ilíada?",
+    "evidencia": [
+      "Ilíada 1",
+      "Ilíada 18",
+      "wikis"
+    ],
+    "respuesta_esperada": "Tetis. Pide a Zeus que favorezca a los troyanos (I) y consigue de Hefesto nuevas armas (XVIII).",
+    "verificada": true,
+    "pasaje_fuente": "iliada_18",
+    "pasaje": "Respondióle Tetis, derramando lágrimas: «¡Oh Vulcano! ¿Hay alguna entre las diosas del Olimpo que haya sufrido en su ánimo tantos y tan graves pesares como a mí me ha enviado el Saturnio Jove? De las ninfas del mar, únicamente a mí me sujetó a un hombre, a Peleo Eácida, y tuve que tolerar, contra toda mi voluntad, el tálamo de un mortal que yace en el palacio, rendido a la triste vejez. Ahora me envía otros males: concedióme que pariera y alimentara a un hijo insigne entre los héroes, que creció semejante a un árbol, le crié como a una planta en terreno fértil y lo mandé a Ilión en las corvas ",
+    "nombres_buscados": [
+      "Aquiles",
+      "Tetis",
+      "Zeus",
+      "Hefesto"
+    ],
+    "nombres_juntos": 4
+  },
+  {
+    "id": "q16",
+    "tipo": "hibrida",
+    "pregunta": "¿Quién es el padre de Telémaco y quién es su abuelo paterno?",
+    "evidencia": [
+      "Odisea 1",
+      "wikis"
+    ],
+    "respuesta_esperada": "Ulises; su abuelo es Laertes.",
+    "verificada": true,
+    "pasaje_fuente": "wiki:Odiseo",
+    "pasaje": "Odiseo o Ulises (en griego clásico: Ὀδυσσεύς;​​ Ulixes en latín)​​ fue uno de los héroes legendarios de la mitología griega. Aparece especialmente como protagonista epónimo de la Odisea pero también es un personaje destacado de la Ilíada, ambas obras atribuidas a Homero. Aparecía también en varios poemas perdidos del llamado ciclo troyano y posteriormente en muchas otras obras.​ \nEra rey de Ítaca, una de las actuales islas Jónicas, situada frente a la costa occidental de Grecia. En la tradición homérica se nos presenta como hijo de Laertes y Anticlea, esposo de Penélope y padre de Telémaco. Su",
+    "nombres_buscados": [
+      "Telémaco",
+      "Ulises",
+      "Laertes"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q17",
+    "tipo": "control",
+    "pregunta": "¿Quién mata a Héctor y en qué canto?",
+    "evidencia": [
+      "Ilíada 22"
+    ],
+    "respuesta_esperada": "Aquiles, en el canto XXII de la Ilíada.",
+    "verificada": true,
+    "pasaje_fuente": "iliada_22",
+    "pasaje": "Los teucros, refugiados en la ciudad como cervatos, se recostaban en los hermosos baluartes, refrigeraban el sudor y bebían para apagar la sed; y en tanto, los aqueos se iban acercando a la muralla, protegiendo sus hombros con los escudos. El hado funesto sólo detuvo a Héctor para que se quedara fuera de Ilión, en las puertas Esceas. Y Febo Apolo dijo al Pelida:",
+    "nombres_buscados": [
+      "Héctor",
+      "Aquiles"
+    ],
+    "nombres_juntos": 2
+  },
+  {
+    "id": "q18",
+    "tipo": "control",
+    "pregunta": "¿Quién mata a Patroclo?",
+    "evidencia": [
+      "Ilíada 16"
+    ],
+    "respuesta_esperada": "Héctor, después de que Apolo lo golpea y Euforbo lo hiere.",
+    "verificada": true,
+    "pasaje_fuente": "iliada_16",
+    "pasaje": "Patroclo acometió furioso a los teucros: tres veces los atacó, cual otro Marte, dando horribles voces; tres veces mató nueve hombres. Y cuando, semejante a un dios, arremetiste, oh Patroclo, por cuarta vez, vióse claramente que ya llegabas al término de tu vida, pues el terrible Febo salió a tu encuentro en el duro combate. Mas Patroclo no vio al dios; el cual, cubierto por densa nube, atravesó la turba, se le puso detrás, y alargando la mano, le dio un golpe en la espalda y en los anchos hombros. Al punto los ojos del héroe sufrieron vértigos. Febo Apolo le quitó de la cabeza el casco con agu",
+    "nombres_buscados": [
+      "Patroclo",
+      "Héctor",
+      "Apolo",
+      "Euforbo"
+    ],
+    "nombres_juntos": 4
+  },
+  {
+    "id": "q19",
+    "tipo": "control",
+    "pregunta": "¿Qué pasa con Escila y Caribdis en la Odisea?",
+    "evidencia": [
+      "Odisea 12"
+    ],
+    "respuesta_esperada": "Ulises pasa entre ambas; Escila devora a seis compañeros.",
+    "verificada": true,
+    "pasaje_fuente": "odisea_12",
+    "pasaje": "»El otro escollo es más bajo y lo verás, Ulises, cerca del primero; pues hállase a tiro de flecha. Hay allí un cabrahigo grande y frondoso, y a su pie la divinal Caribdis sorbe la turbia agua. Tres veces al día la echa afuera y otras tantas vuelve a sorberla de un modo horrible. No te encuentres allí cuando la sorbe, pues ni Neptuno, que sacude la tierra, podría librarte de la perdición. Debes, por el contrario, acercarte mucho al escollo de Escila y hacer que tu nave pase rápidamente; pues mejor es que eches de menos a seis compañeros que no a todos juntos.»",
+    "nombres_buscados": [
+      "Escila",
+      "Caribdis",
+      "Ulises"
+    ],
+    "nombres_juntos": 3
+  },
+  {
+    "id": "q20",
+    "tipo": "control",
+    "pregunta": "¿Quién advierte a Ulises sobre las Sirenas y cómo las evita?",
+    "evidencia": [
+      "Odisea 12"
+    ],
+    "respuesta_esperada": "Circe. Tapa con cera los oídos de sus compañeros y se hace atar al mástil.",
+    "verificada": true,
+    "pasaje_fuente": "odisea_12",
+    "pasaje": "«Así, pues, se han llevado a cumplimiento todas estas cosas. Oye ahora lo que voy a decir y un dios en persona te lo recordará más tarde. Llegarás primero a las Sirenas, que encantan a cuantos hombres van a encontrarlas. Aquél que imprudentemente se acerca a las mismas y oye su voz, ya no vuelve a ver a su esposa ni a sus hijos pequeñuelos rodeándole, llenos de júbilo, cuando torna a sus hogares; sino que le hechizan las Sirenas con el sonoro canto, sentadas en una pradera y teniendo a su alrededor enorme montón de huesos de hombres putrefactos cuya piel se va consumiendo. Pasa de largo y tapa",
+    "nombres_buscados": [
+      "Ulises",
+      "Sirenas",
+      "Circe",
+      "Tapa"
+    ],
+    "nombres_juntos": 2
+  }
 ]
