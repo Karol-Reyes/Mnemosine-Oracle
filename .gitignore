@@ -13,7 +13,6 @@ data/processed/
 graph/dumps/*
 !graph/dumps/.gitkeep
 scratch_models/checkpoints/
-eval/resultados/*
 !eval/resultados/.gitkeep
 
 # Editor / SO
