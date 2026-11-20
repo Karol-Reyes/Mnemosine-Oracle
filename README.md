@@ -90,14 +90,22 @@ Mnemosine-Oracle/
 │   ├── build.py            # carga el grafo
 │   ├── revisar.py          # revisión del grafo
 │   └── dumps/              # respaldos del grafo
-├── rag/baseline.py         # Fase 3: RAG normal (búsqueda vectorial)
+├── rag/                    # Fase 3: RAG normal
+│   ├── baseline.py         # búsqueda vectorial en Neo4j
+│   └── indice.py           # el mismo baseline sin Neo4j, para medir offline
 ├── graphrag/retriever.py   # Fase 3: GraphRAG (entidades + recorrido del grafo)
 ├── agent/grafo.py          # Fase 4: agente LangGraph (elige RAG o GraphRAG)
 ├── scratch_models/         # Fase 4: n-grama y mini red
+│   ├── corpus.py           # tokenización, vocabulario y partición (compartidos)
+│   ├── ngramas.py          # add-k y backoff (taller 1)
+│   ├── mini_red.py         # embeddings + capa oculta en PyTorch (taller 2)
+│   └── comparar.py         # perplejidad de los dos, sobre los mismos objetivos
 ├── app/                    # Fase 4: interfaz Gradio (main.py) y formato de respuestas
 └── eval/                   # Fases 3 y 5: preguntas y resultados
     ├── preguntas.json
-    ├── run.py
+    ├── verificar.py        # busca en el texto el pasaje que respalda cada respuesta
+    ├── run.py              # RAG vs GraphRAG, con juez
+    ├── correr.py           # recall del baseline offline (sin Neo4j ni cuota)
     └── resultados/         # respuestas.json, resumen.md, recuperacion.md
 ```
 
@@ -158,6 +166,13 @@ Todos los comandos se corren desde la raíz del repo, con el entorno activado.
 | 5. Agente e interfaz | `python -m agent.grafo "pregunta"` y `python -m app.main` | Pasos del agente y respuesta; interfaz en http://127.0.0.1:7860 |
 | 5b. Modelos desde cero | `python -m scratch_models.comparar` | Perplejidad del n-grama y la mini red; guarda `scratch_models/checkpoints/mini_red.pt` |
 | 6. Evaluación | `python -m eval.run` | `eval/resultados/resumen.md` (RAG vs GraphRAG por tipo de pregunta) |
+
+Dos pasos no necesitan Neo4j ni cuota del LLM, útiles para revisar sin gastar llamadas:
+
+| Paso | Comando | Resultado |
+|---|---|---|
+| Verificar las preguntas | `python -m eval.verificar` | El párrafo que respalda cada respuesta; con `--escribir` lo guarda en `preguntas.json` |
+| Recall del baseline offline | `python -m rag.indice` y luego `python -m eval.correr` | `eval/resultados/rag_baseline.json` y el sesgo de fuente |
 
 ### Normalización del texto
 
@@ -234,14 +249,26 @@ python -m graphrag.retriever "¿Qué hijo de Zeus muere en la Ilíada y quién l
 | `hibrida` | 8 | Poema + Wikipedia, o dos saltos en el grafo |
 | `control` | 4 | Un solo canto (el RAG normal debería acertarlas) |
 
-Las preguntas se definieron *antes* de construir el grafo, para no sesgarlas hacia lo que el grafo ya contesta bien. Cada respuesta esperada se verifica contra el texto (campo `verificada`).
+Las preguntas se definieron *antes* de construir el grafo, para no sesgarlas hacia lo que el grafo ya contesta bien.
+
+### Verificación de las preguntas
+
+Antes de medir nada con ellas hay que comprobar que el corpus dice lo que la respuesta esperada afirma: si no, un sistema que acierte sale mal evaluado y uno que invente sale bien. `eval/verificar.py` busca en los cantos de la `evidencia` los nombres de la pregunta y de la respuesta, traducidos con `equivalencias.csv` (las respuestas dicen "Atenea" y "Zeus"; Segala escribe "Minerva" y "Júpiter", así que sin traducir todo daría por ausente).
+
+No basta con que cada nombre aparezca *en algún lado* del canto: en "¿quién mata a Héctor?" Aquiles, Patroclo y Paris aparecen todos en el canto XXII, así que la respuesta falsa "Patroclo" pasaría igual. El chequeo exige que los nombres salgan **juntos en un párrafo** e imprime ese párrafo para leerlo a mano.
+
+```powershell
+python -m eval.verificar --escribir
+```
+
+El chequeo encuentra pasaje para las 20, pero eso solo acota: hay que leerlo. Leyéndolos quedaron **12 en `verificada: true`** (4 de cada tipo). Las otras 8 guardan su pasaje en `preguntas.json` y no se cierran con un solo párrafo: las de conjunto (`q01`, `q10`: qué dioses o qué hijos de Zeus) necesitan varios cantos a la vez, y en otras el párrafo nombra a los dos personajes sin afirmar la relación que la respuesta dice. Son, justamente, las que GraphRAG tampoco resuelve del todo (`q09`, `q10`).
 
 **Métricas:**
 
 1. **Recall de evidencia** (sin LLM): fracción de los cantos de `evidencia` que llegan al contexto como fragmentos de texto.
 2. **Puntaje del juez**: un LLM compara cada respuesta con `respuesta_esperada` (1 correcta, 0.5 parcial, 0 incorrecta).
 3. Tiempo de recuperación + respuesta.
-4. Pérdida y perplejidad del n-grama y la mini red frente a un transformer (Fase 4).
+4. Perplejidad del n-grama y de la mini red (Fase 4), sobre el mismo vocabulario y la misma partición.
 
 | Comando | Para qué |
 |---|---|
@@ -261,6 +288,45 @@ Las preguntas se definieron *antes* de construir el grafo, para no sesgarlas hac
 | total | 20 | 0.23 | 0.82 | 0.27 | 0.83 |
 
 El puntaje del juez varía entre corridas (el mismo LLM responde y juzga), así que el recall es la métrica más estable. Límites conocidos de GraphRAG: en `q09` y `q10` (hijos de Zeus) la lista de hechos se corta antes de llegar a todos, y algunas frases mezclan relaciones del grafo mal extraídas (`q08`, `q15`).
+
+### Por qué el RAG normal se queda en 0.27 de recall
+
+El recall del baseline no es bajo por azar, y la causa se puede medir sin LLM. `rag/indice.py` y `eval/correr.py` repiten la búsqueda vectorial **sin Neo4j y sin cuota** (los mismos 664 fragmentos y el mismo modelo de embeddings, pero en una matriz en memoria), y cuentan de dónde salen los fragmentos que trae:
+
+```powershell
+python -m rag.indice      # construye el índice: 664 fragmentos (450 de los poemas, 214 de las wikis)
+python -m eval.correr     # alguno@k y todos@k sobre las 20 preguntas
+```
+
+Wikipedia es el **32 %** del índice (214 de 664) pero se lleva el **70 %** de los puestos recuperados con `k=5` (70 de 100), y en **9 de las 20** preguntas se lleva los cinco y los poemas quedan en cero. El caso más claro es `q19`, de control: la pregunta dice "en la Odisea" y el retriever devuelve `wiki_Caribdis`, `wiki_Escila`, `wiki_Odiseo`, nunca `odisea_12`.
+
+Es un problema de registro. Las preguntas están escritas en tono enciclopédico, y el artículo de Wikipedia *habla sobre* la entidad mientras el poema solo la *narra*; el parecido superficial gana. Cuadra con lo que se ve arriba: las `hibrida`, que son las que mezclan poema y wiki, son las de peor recall del RAG (0.14), y es el mismo desbalance que `graph.revisar` muestra del lado del grafo (1.475 aristas salen solo de las wikis contra 666 solo de los poemas).
+
+Y es la razón concreta de que GraphRAG gane: la arista guarda de qué canto salió, así que el contexto se puede filtrar al poema que la pregunta nombra en vez de confiar en el parecido del texto.
+
+| Métrica del baseline offline | @5 | @10 |
+|---|---|---|
+| trajo **algún** documento de la evidencia | 10/20 | 13/20 |
+| trajo **todos** los documentos | 3/20 | 6/20 |
+
+### Modelos desde cero
+
+Las dos perplejidades se miden sobre el mismo vocabulario, la misma partición y la misma posición de arranque en validación: si un modelo se evalúa sobre más objetivos que el otro, los números no son comparables aunque estén en las mismas unidades. Corpus: 91.603 tokens de los cantos, vocabulario de 4.811 palabras (`<unk>` armado **solo** con el entrenamiento).
+
+| Modelo | Contexto | Perplejidad |
+|---|---|---|
+| mini red | 2 | **128,6** |
+| bigrama | 1 | 223,5 |
+| unigrama | 0 | 315,0 |
+| trigrama | 2 | 485,8 |
+| 4-grama | 3 | 693,2 |
+
+Dos cosas que salieron de medir y no de suponer:
+
+1. **El n-grama empeora al subir el orden.** No es un error, es escasez de datos: con 82 mil tokens de entrenamiento casi todo contexto de tres palabras se vio una sola vez, y add-k reparte esa única observación entre 4.811 palabras (el denominador queda en ~49, así que la continuación observada se queda con 0.02 de probabilidad). Por eso el modelo que quedó es el **bigrama**, no el trigrama.
+2. **Con el mismo contexto de dos palabras, la red es 3,8 veces mejor que el trigrama** (486 → 129). La diferencia no es cuánta información recibe cada uno, es qué hace con ella: el n-grama cuenta secuencias exactas y una que no vio no le dice nada, mientras que la red representa cada palabra como un vector y lo que aprendió de "Aquiles" le sirve para "Patroclo".
+
+La red sobreajusta desde la época 5, así que `mini_red.py` se queda con el mejor estado en validación y no con el último.
 
 ---
 
@@ -286,6 +352,7 @@ El puntaje del juez varía entre corridas (el mismo LLM responde y juzga), así 
 - [x] Cargar el resto y subir `data/extracciones/` al repo como respaldo
 
 **Fase 3: recuperación (días 5-7)**
+- [x] Verificar las 20 preguntas contra el texto (`eval/verificar.py`)
 - [x] RAG normal (baseline)
 - [x] GraphRAG con retrievers de Neo4j
 - [x] Primera corrida de las 20 preguntas
@@ -296,5 +363,6 @@ El puntaje del juez varía entre corridas (el mismo LLM responde y juzga), así 
 - [x] Interfaz en Gradio
 
 **Fase 5: cierre (días 12-14)**
-- [ ] Tabla de resultados
+- [x] Tabla de resultados (`eval/resultados/resumen.md`) y perplejidades
+- [x] Bitácora de pruebas (`PRUEBAS.md`)
 - [ ] Diagrama y diapositivas

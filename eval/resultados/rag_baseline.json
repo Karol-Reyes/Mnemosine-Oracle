@@ -1,0 +1,808 @@
+{
+  "k": [
+    3,
+    5,
+    10
+  ],
+  "por_pregunta": [
+    {
+      "id": "q01",
+      "tipo": "cruce",
+      "difusa": true,
+      "esperados": 16,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q02",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q03",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q04",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q05",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 3,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q06",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": true
+    },
+    {
+      "id": "q07",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q08",
+      "tipo": "cruce",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": true,
+      "alguno@10": true,
+      "todos@10": true
+    },
+    {
+      "id": "q09",
+      "tipo": "hibrida",
+      "difusa": true,
+      "esperados": 54,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q10",
+      "tipo": "hibrida",
+      "difusa": true,
+      "esperados": 61,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q11",
+      "tipo": "hibrida",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q12",
+      "tipo": "hibrida",
+      "difusa": true,
+      "esperados": 55,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q13",
+      "tipo": "hibrida",
+      "difusa": false,
+      "esperados": 2,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": true
+    },
+    {
+      "id": "q14",
+      "tipo": "hibrida",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q15",
+      "tipo": "hibrida",
+      "difusa": true,
+      "esperados": 55,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q16",
+      "tipo": "hibrida",
+      "difusa": true,
+      "esperados": 54,
+      "alguno@3": true,
+      "todos@3": false,
+      "alguno@5": true,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": false
+    },
+    {
+      "id": "q17",
+      "tipo": "control",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": true,
+      "todos@10": true
+    },
+    {
+      "id": "q18",
+      "tipo": "control",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": true,
+      "todos@3": true,
+      "alguno@5": true,
+      "todos@5": true,
+      "alguno@10": true,
+      "todos@10": true
+    },
+    {
+      "id": "q19",
+      "tipo": "control",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": false,
+      "todos@3": false,
+      "alguno@5": false,
+      "todos@5": false,
+      "alguno@10": false,
+      "todos@10": false
+    },
+    {
+      "id": "q20",
+      "tipo": "control",
+      "difusa": false,
+      "esperados": 1,
+      "alguno@3": true,
+      "todos@3": true,
+      "alguno@5": true,
+      "todos@5": true,
+      "alguno@10": true,
+      "todos@10": true
+    }
+  ],
+  "detalle": [
+    {
+      "id": "q01",
+      "esperados": [
+        "iliada_01",
+        "iliada_03",
+        "iliada_06",
+        "iliada_16",
+        "iliada_18",
+        "iliada_21",
+        "iliada_22",
+        "iliada_24",
+        "odisea_01",
+        "odisea_04",
+        "odisea_05",
+        "odisea_08",
+        "odisea_09",
+        "odisea_11",
+        "odisea_12",
+        "odisea_22"
+      ],
+      "recuperados@5": [
+        "odisea_01",
+        "iliada_01",
+        "wiki_Eos",
+        "odisea_01",
+        "wiki_Afrodita"
+      ]
+    },
+    {
+      "id": "q02",
+      "esperados": [
+        "iliada_18",
+        "odisea_08"
+      ],
+      "recuperados@5": [
+        "wiki_Odiseo",
+        "wiki_Hécuba",
+        "wiki_Tiresias",
+        "wiki_Ítaca",
+        "wiki_Odiseo"
+      ]
+    },
+    {
+      "id": "q03",
+      "esperados": [
+        "odisea_11"
+      ],
+      "recuperados@5": [
+        "wiki_Aquiles",
+        "wiki_Áyax_el_Grande",
+        "iliada_21",
+        "wiki_Patroclo",
+        "wiki_Ítaca"
+      ]
+    },
+    {
+      "id": "q04",
+      "esperados": [
+        "iliada_24",
+        "odisea_05"
+      ],
+      "recuperados@5": [
+        "wiki_Odiseo",
+        "wiki_Odiseo",
+        "wiki_Odiseo",
+        "wiki_Helios",
+        "wiki_Odiseo"
+      ]
+    },
+    {
+      "id": "q05",
+      "esperados": [
+        "iliada_01",
+        "odisea_04",
+        "odisea_11"
+      ],
+      "recuperados@5": [
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Agamenón",
+        "odisea_11",
+        "odisea_01"
+      ]
+    },
+    {
+      "id": "q06",
+      "esperados": [
+        "iliada_03",
+        "odisea_04"
+      ],
+      "recuperados@5": [
+        "wiki_Menelao",
+        "wiki_Eneas",
+        "wiki_Menelao",
+        "wiki_Menelao",
+        "wiki_Afrodita"
+      ]
+    },
+    {
+      "id": "q07",
+      "esperados": [
+        "odisea_11"
+      ],
+      "recuperados@5": [
+        "wiki_Perséfone",
+        "wiki_Hades",
+        "wiki_Hades",
+        "wiki_Sirena",
+        "wiki_Odiseo"
+      ]
+    },
+    {
+      "id": "q08",
+      "esperados": [
+        "iliada_03",
+        "odisea_04"
+      ],
+      "recuperados@5": [
+        "wiki_Eneas",
+        "wiki_Helena_(mitología)",
+        "wiki_Helena_(mitología)",
+        "odisea_04",
+        "iliada_03"
+      ]
+    },
+    {
+      "id": "q09",
+      "esperados": [
+        "iliada_21",
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Alcínoo",
+        "wiki_Andrómaca",
+        "wiki_Antínoo",
+        "wiki_Apolo",
+        "wiki_Aquiles",
+        "wiki_Ares",
+        "wiki_Artemisa",
+        "wiki_Atenea",
+        "wiki_Briseida",
+        "wiki_Calipso",
+        "wiki_Caribdis",
+        "wiki_Circe",
+        "wiki_Diomedes",
+        "wiki_Egisto",
+        "wiki_Eneas",
+        "wiki_Eos",
+        "wiki_Escila",
+        "wiki_Euriclea",
+        "wiki_Hades",
+        "wiki_Hefesto",
+        "wiki_Helena_(mitología)",
+        "wiki_Helios",
+        "wiki_Hera",
+        "wiki_Hermes",
+        "wiki_Héctor",
+        "wiki_Hécuba",
+        "wiki_Iris",
+        "wiki_Laertes",
+        "wiki_Leto",
+        "wiki_Menelao",
+        "wiki_Néstor_(mitología)",
+        "wiki_Odiseo",
+        "wiki_Orestes",
+        "wiki_Paris",
+        "wiki_Patroclo",
+        "wiki_Peleo",
+        "wiki_Penélope",
+        "wiki_Perséfone",
+        "wiki_Pilos",
+        "wiki_Polifemo",
+        "wiki_Poseidón",
+        "wiki_Príamo",
+        "wiki_Sarpedón",
+        "wiki_Sirena",
+        "wiki_Telémaco",
+        "wiki_Tetis_(titánide)",
+        "wiki_Tiresias",
+        "wiki_Troya",
+        "wiki_Zeus",
+        "wiki_Áyax_el_Grande",
+        "wiki_Ítaca"
+      ],
+      "recuperados@5": [
+        "wiki_Zeus",
+        "odisea_05",
+        "wiki_Zeus",
+        "wiki_Hermes",
+        "wiki_Tetis_(titánide)"
+      ]
+    },
+    {
+      "id": "q10",
+      "esperados": [
+        "odisea_01",
+        "odisea_04",
+        "odisea_05",
+        "odisea_08",
+        "odisea_09",
+        "odisea_11",
+        "odisea_12",
+        "odisea_22",
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Alcínoo",
+        "wiki_Andrómaca",
+        "wiki_Antínoo",
+        "wiki_Apolo",
+        "wiki_Aquiles",
+        "wiki_Ares",
+        "wiki_Artemisa",
+        "wiki_Atenea",
+        "wiki_Briseida",
+        "wiki_Calipso",
+        "wiki_Caribdis",
+        "wiki_Circe",
+        "wiki_Diomedes",
+        "wiki_Egisto",
+        "wiki_Eneas",
+        "wiki_Eos",
+        "wiki_Escila",
+        "wiki_Euriclea",
+        "wiki_Hades",
+        "wiki_Hefesto",
+        "wiki_Helena_(mitología)",
+        "wiki_Helios",
+        "wiki_Hera",
+        "wiki_Hermes",
+        "wiki_Héctor",
+        "wiki_Hécuba",
+        "wiki_Iris",
+        "wiki_Laertes",
+        "wiki_Leto",
+        "wiki_Menelao",
+        "wiki_Néstor_(mitología)",
+        "wiki_Odiseo",
+        "wiki_Orestes",
+        "wiki_Paris",
+        "wiki_Patroclo",
+        "wiki_Peleo",
+        "wiki_Penélope",
+        "wiki_Perséfone",
+        "wiki_Pilos",
+        "wiki_Polifemo",
+        "wiki_Poseidón",
+        "wiki_Príamo",
+        "wiki_Sarpedón",
+        "wiki_Sirena",
+        "wiki_Telémaco",
+        "wiki_Tetis_(titánide)",
+        "wiki_Tiresias",
+        "wiki_Troya",
+        "wiki_Zeus",
+        "wiki_Áyax_el_Grande",
+        "wiki_Ítaca"
+      ],
+      "recuperados@5": [
+        "wiki_Helena_(mitología)",
+        "wiki_Hades",
+        "wiki_Odiseo",
+        "wiki_Sirena",
+        "wiki_Odiseo"
+      ]
+    },
+    {
+      "id": "q11",
+      "esperados": [
+        "iliada_21",
+        "odisea_08"
+      ],
+      "recuperados@5": [
+        "wiki_Apolo",
+        "wiki_Afrodita",
+        "wiki_Zeus",
+        "wiki_Eneas",
+        "wiki_Apolo"
+      ]
+    },
+    {
+      "id": "q12",
+      "esperados": [
+        "odisea_01",
+        "odisea_05",
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Alcínoo",
+        "wiki_Andrómaca",
+        "wiki_Antínoo",
+        "wiki_Apolo",
+        "wiki_Aquiles",
+        "wiki_Ares",
+        "wiki_Artemisa",
+        "wiki_Atenea",
+        "wiki_Briseida",
+        "wiki_Calipso",
+        "wiki_Caribdis",
+        "wiki_Circe",
+        "wiki_Diomedes",
+        "wiki_Egisto",
+        "wiki_Eneas",
+        "wiki_Eos",
+        "wiki_Escila",
+        "wiki_Euriclea",
+        "wiki_Hades",
+        "wiki_Hefesto",
+        "wiki_Helena_(mitología)",
+        "wiki_Helios",
+        "wiki_Hera",
+        "wiki_Hermes",
+        "wiki_Héctor",
+        "wiki_Hécuba",
+        "wiki_Iris",
+        "wiki_Laertes",
+        "wiki_Leto",
+        "wiki_Menelao",
+        "wiki_Néstor_(mitología)",
+        "wiki_Odiseo",
+        "wiki_Orestes",
+        "wiki_Paris",
+        "wiki_Patroclo",
+        "wiki_Peleo",
+        "wiki_Penélope",
+        "wiki_Perséfone",
+        "wiki_Pilos",
+        "wiki_Polifemo",
+        "wiki_Poseidón",
+        "wiki_Príamo",
+        "wiki_Sarpedón",
+        "wiki_Sirena",
+        "wiki_Telémaco",
+        "wiki_Tetis_(titánide)",
+        "wiki_Tiresias",
+        "wiki_Troya",
+        "wiki_Zeus",
+        "wiki_Áyax_el_Grande",
+        "wiki_Ítaca"
+      ],
+      "recuperados@5": [
+        "wiki_Aquiles",
+        "wiki_Odiseo",
+        "wiki_Egisto",
+        "wiki_Alcínoo",
+        "wiki_Odiseo"
+      ]
+    },
+    {
+      "id": "q13",
+      "esperados": [
+        "odisea_01",
+        "odisea_09"
+      ],
+      "recuperados@5": [
+        "iliada_16",
+        "iliada_16",
+        "iliada_01",
+        "iliada_21",
+        "odisea_22"
+      ]
+    },
+    {
+      "id": "q14",
+      "esperados": [
+        "iliada_16"
+      ],
+      "recuperados@5": [
+        "wiki_Atenea",
+        "wiki_Hades",
+        "wiki_Helena_(mitología)",
+        "wiki_Egisto",
+        "wiki_Zeus"
+      ]
+    },
+    {
+      "id": "q15",
+      "esperados": [
+        "iliada_01",
+        "iliada_18",
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Alcínoo",
+        "wiki_Andrómaca",
+        "wiki_Antínoo",
+        "wiki_Apolo",
+        "wiki_Aquiles",
+        "wiki_Ares",
+        "wiki_Artemisa",
+        "wiki_Atenea",
+        "wiki_Briseida",
+        "wiki_Calipso",
+        "wiki_Caribdis",
+        "wiki_Circe",
+        "wiki_Diomedes",
+        "wiki_Egisto",
+        "wiki_Eneas",
+        "wiki_Eos",
+        "wiki_Escila",
+        "wiki_Euriclea",
+        "wiki_Hades",
+        "wiki_Hefesto",
+        "wiki_Helena_(mitología)",
+        "wiki_Helios",
+        "wiki_Hera",
+        "wiki_Hermes",
+        "wiki_Héctor",
+        "wiki_Hécuba",
+        "wiki_Iris",
+        "wiki_Laertes",
+        "wiki_Leto",
+        "wiki_Menelao",
+        "wiki_Néstor_(mitología)",
+        "wiki_Odiseo",
+        "wiki_Orestes",
+        "wiki_Paris",
+        "wiki_Patroclo",
+        "wiki_Peleo",
+        "wiki_Penélope",
+        "wiki_Perséfone",
+        "wiki_Pilos",
+        "wiki_Polifemo",
+        "wiki_Poseidón",
+        "wiki_Príamo",
+        "wiki_Sarpedón",
+        "wiki_Sirena",
+        "wiki_Telémaco",
+        "wiki_Tetis_(titánide)",
+        "wiki_Tiresias",
+        "wiki_Troya",
+        "wiki_Zeus",
+        "wiki_Áyax_el_Grande",
+        "wiki_Ítaca"
+      ],
+      "recuperados@5": [
+        "wiki_Patroclo",
+        "iliada_24",
+        "iliada_16",
+        "wiki_Aquiles",
+        "wiki_Aquiles"
+      ]
+    },
+    {
+      "id": "q16",
+      "esperados": [
+        "odisea_01",
+        "wiki_Afrodita",
+        "wiki_Agamenón",
+        "wiki_Alcínoo",
+        "wiki_Andrómaca",
+        "wiki_Antínoo",
+        "wiki_Apolo",
+        "wiki_Aquiles",
+        "wiki_Ares",
+        "wiki_Artemisa",
+        "wiki_Atenea",
+        "wiki_Briseida",
+        "wiki_Calipso",
+        "wiki_Caribdis",
+        "wiki_Circe",
+        "wiki_Diomedes",
+        "wiki_Egisto",
+        "wiki_Eneas",
+        "wiki_Eos",
+        "wiki_Escila",
+        "wiki_Euriclea",
+        "wiki_Hades",
+        "wiki_Hefesto",
+        "wiki_Helena_(mitología)",
+        "wiki_Helios",
+        "wiki_Hera",
+        "wiki_Hermes",
+        "wiki_Héctor",
+        "wiki_Hécuba",
+        "wiki_Iris",
+        "wiki_Laertes",
+        "wiki_Leto",
+        "wiki_Menelao",
+        "wiki_Néstor_(mitología)",
+        "wiki_Odiseo",
+        "wiki_Orestes",
+        "wiki_Paris",
+        "wiki_Patroclo",
+        "wiki_Peleo",
+        "wiki_Penélope",
+        "wiki_Perséfone",
+        "wiki_Pilos",
+        "wiki_Polifemo",
+        "wiki_Poseidón",
+        "wiki_Príamo",
+        "wiki_Sarpedón",
+        "wiki_Sirena",
+        "wiki_Telémaco",
+        "wiki_Tetis_(titánide)",
+        "wiki_Tiresias",
+        "wiki_Troya",
+        "wiki_Zeus",
+        "wiki_Áyax_el_Grande",
+        "wiki_Ítaca"
+      ],
+      "recuperados@5": [
+        "wiki_Aquiles",
+        "wiki_Telémaco",
+        "wiki_Telémaco",
+        "odisea_01",
+        "wiki_Áyax_el_Grande"
+      ]
+    },
+    {
+      "id": "q17",
+      "esperados": [
+        "iliada_22"
+      ],
+      "recuperados@5": [
+        "iliada_16",
+        "iliada_06",
+        "iliada_03",
+        "iliada_18",
+        "iliada_16"
+      ]
+    },
+    {
+      "id": "q18",
+      "esperados": [
+        "iliada_16"
+      ],
+      "recuperados@5": [
+        "iliada_16",
+        "iliada_18",
+        "iliada_21",
+        "wiki_Patroclo",
+        "wiki_Patroclo"
+      ]
+    },
+    {
+      "id": "q19",
+      "esperados": [
+        "odisea_12"
+      ],
+      "recuperados@5": [
+        "wiki_Caribdis",
+        "wiki_Escila",
+        "wiki_Caribdis",
+        "wiki_Odiseo",
+        "wiki_Tiresias"
+      ]
+    },
+    {
+      "id": "q20",
+      "esperados": [
+        "odisea_12"
+      ],
+      "recuperados@5": [
+        "odisea_12",
+        "iliada_16",
+        "iliada_06",
+        "iliada_03",
+        "odisea_12"
+      ]
+    }
+  ]
+}
