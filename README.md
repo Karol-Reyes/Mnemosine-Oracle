@@ -268,7 +268,7 @@ El chequeo encuentra pasaje para las 20, pero eso solo acota: hay que leerlo. Le
 1. **Recall de evidencia** (sin LLM): fracción de los cantos de `evidencia` que llegan al contexto como fragmentos de texto.
 2. **Puntaje del juez**: un LLM compara cada respuesta con `respuesta_esperada` (1 correcta, 0.5 parcial, 0 incorrecta).
 3. Tiempo de recuperación + respuesta.
-4. Perplejidad del n-grama y de la mini red (Fase 4), sobre el mismo vocabulario y la misma partición.
+4. Perplejidad del n-grama y la mini red sobre los mismos objetivos de validación (Fase 4).
 
 | Comando | Para qué |
 |---|---|
@@ -277,6 +277,7 @@ El chequeo encuentra pasaje para las 20, pero eso solo acota: hay que leerlo. Le
 | `python -m eval.run --pregunta q14 --modo graphrag --rehacer` | Repetir una pregunta tras un cambio |
 | `python -m eval.run --sin-juez` | Solo respuestas |
 | `python -m eval.run --resumen` | Rehacer `resumen.md` con lo guardado |
+| `python -m eval.tabla_final` | Tabla final (RAG vs GraphRAG y modelos desde cero) en `tabla_final.md`, sin LLM ni Neo4j |
 
 **Resultados** (20 preguntas, `gemini-3.5-flash-lite`; detalle en `eval/resultados/resumen.md`):
 
@@ -363,6 +364,6 @@ La red sobreajusta desde la época 5, así que `mini_red.py` se queda con el mej
 - [x] Interfaz en Gradio
 
 **Fase 5: cierre (días 12-14)**
-- [x] Tabla de resultados (`eval/resultados/resumen.md`) y perplejidades
+- [x] Tabla de resultados (`eval/resultados/resumen.md` y `tabla_final.md`) y perplejidades
 - [x] Bitácora de pruebas (`PRUEBAS.md`)
 - [ ] Diagrama y diapositivas
