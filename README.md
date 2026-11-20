@@ -268,7 +268,7 @@ El chequeo encuentra pasaje para las 20, pero eso solo acota: hay que leerlo. Le
 1. **Recall de evidencia** (sin LLM): fracción de los cantos de `evidencia` que llegan al contexto como fragmentos de texto.
 2. **Puntaje del juez**: un LLM compara cada respuesta con `respuesta_esperada` (1 correcta, 0.5 parcial, 0 incorrecta).
 3. Tiempo de recuperación + respuesta.
-4. Perplejidad del n-grama y la mini red sobre los mismos objetivos de validación (Fase 4).
+4. Perplejidad del n-grama y de la mini red (Fase 4), sobre el mismo vocabulario y la misma partición.
 
 | Comando | Para qué |
 |---|---|
@@ -366,4 +366,4 @@ La red sobreajusta desde la época 5, así que `mini_red.py` se queda con el mej
 **Fase 5: cierre (días 12-14)**
 - [x] Tabla de resultados (`eval/resultados/resumen.md` y `tabla_final.md`) y perplejidades
 - [x] Bitácora de pruebas (`PRUEBAS.md`)
-- [ ] Diagrama y diapositivas
+- [x] Diagrama (`docs/arquitectura.svg`) y diapositivas (`docs/Mnemosine-Oracle.pptx`)
