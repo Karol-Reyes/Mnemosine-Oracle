@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 560" width="1380" height="560" font-family="Arial, Helvetica, sans-serif" fill="#222">
+<defs><marker id="p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222"/></marker></defs>
+<rect width="1380" height="560" fill="#ffffff"/>
+<text x="135.0" y="30" font-size="15" font-weight="bold" text-anchor="middle">Fuentes</text>
+<text x="410.0" y="30" font-size="15" font-weight="bold" text-anchor="middle">Preparación</text>
+<text x="705.0" y="30" font-size="15" font-weight="bold" text-anchor="middle">Base de datos</text>
+<text x="990.0" y="30" font-size="15" font-weight="bold" text-anchor="middle">Recuperación</text>
+<text x="1250.0" y="30" font-size="15" font-weight="bold" text-anchor="middle">Agente e interfaz</text>
+<rect x="30" y="50" width="210" height="60" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="42" y="76" font-size="16" font-weight="bold">La Ilíada</text>
+<text x="42" y="100" font-size="14">8 cantos</text>
+<rect x="30" y="120" width="210" height="60" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="42" y="146" font-size="16" font-weight="bold">La Odisea</text>
+<text x="42" y="170" font-size="14">8 cantos</text>
+<rect x="30" y="190" width="210" height="60" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="42" y="216" font-size="16" font-weight="bold">Wikipedia</text>
+<text x="42" y="240" font-size="14">53 artículos</text>
+<rect x="30" y="280" width="210" height="80" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="42" y="306" font-size="16" font-weight="bold">Listas de nombres</text>
+<text x="42" y="330" font-size="14">equivalencias.csv</text>
+<text x="42" y="349" font-size="14">entidades.csv</text>
+<rect x="300" y="50" width="220" height="130" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="312" y="76" font-size="16" font-weight="bold">Preparar los textos</text>
+<text x="312" y="100" font-size="14">Se limpia la ortografía</text>
+<text x="312" y="119" font-size="14">de los cantos y se parten</text>
+<text x="312" y="138" font-size="14">en fragmentos</text>
+<rect x="300" y="210" width="220" height="150" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="312" y="236" font-size="16" font-weight="bold">Construir el grafo</text>
+<text x="312" y="260" font-size="14">Gemini saca personajes</text>
+<text x="312" y="279" font-size="14">y relaciones de cada</text>
+<text x="312" y="298" font-size="14">fragmento</text>
+<rect x="580" y="50" width="250" height="310" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="592" y="76" font-size="16" font-weight="bold">Neo4j</text>
+<rect x="600" y="90" width="210" height="110" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="612" y="116" font-size="16" font-weight="bold">Grafo</text>
+<text x="612" y="140" font-size="14">Personajes, dioses, lugares</text>
+<text x="612" y="159" font-size="14">y sus relaciones</text>
+<rect x="600" y="215" width="210" height="130" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="612" y="241" font-size="16" font-weight="bold">Fragmentos</text>
+<text x="612" y="265" font-size="14">El texto de los cantos y</text>
+<text x="612" y="284" font-size="14">de Wikipedia con sus</text>
+<text x="612" y="303" font-size="14">embeddings</text>
+<rect x="890" y="50" width="200" height="120" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="902" y="76" font-size="16" font-weight="bold">RAG normal</text>
+<text x="902" y="100" font-size="14">Busca los 5 fragmentos</text>
+<text x="902" y="119" font-size="14">más parecidos a la</text>
+<text x="902" y="138" font-size="14">pregunta</text>
+<rect x="890" y="200" width="200" height="160" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="902" y="226" font-size="16" font-weight="bold">GraphRAG</text>
+<text x="902" y="250" font-size="14">Busca los personajes de</text>
+<text x="902" y="269" font-size="14">la pregunta en el grafo</text>
+<text x="902" y="288" font-size="14">y trae sus relaciones</text>
+<text x="902" y="307" font-size="14">y fragmentos</text>
+<rect x="1150" y="80" width="200" height="150" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="1162" y="106" font-size="16" font-weight="bold">Agente (LangGraph)</text>
+<text x="1162" y="130" font-size="14">Decide si usa RAG o</text>
+<text x="1162" y="149" font-size="14">GraphRAG y responde</text>
+<text x="1162" y="168" font-size="14">con citas</text>
+<rect x="1150" y="260" width="200" height="90" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="1162" y="286" font-size="16" font-weight="bold">Interfaz (Gradio)</text>
+<text x="1162" y="310" font-size="14">Chat para hacer</text>
+<text x="1162" y="329" font-size="14">las preguntas</text>
+<rect x="30" y="420" width="490" height="110" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="42" y="446" font-size="16" font-weight="bold">Modelos desde cero</text>
+<text x="42" y="470" font-size="14">N-grama y mini red entrenados con el texto</text>
+<text x="42" y="489" font-size="14">de los poemas. Se comparan con la perplejidad.</text>
+<rect x="580" y="420" width="510" height="110" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="592" y="446" font-size="16" font-weight="bold">Evaluación</text>
+<text x="592" y="470" font-size="14">20 preguntas para comparar RAG y GraphRAG</text>
+<text x="592" y="489" font-size="14">con el puntaje de un juez y el recall.</text>
+<rect x="1150" y="420" width="200" height="110" fill="#f4f4f4" stroke="#222" stroke-width="1.5"/>
+<text x="1162" y="446" font-size="16" font-weight="bold">Resultados</text>
+<text x="1162" y="470" font-size="14">Tabla final con todo</text>
+<path d="M240 80 H300" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M240 150 H300" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M240 220 H300" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M240 320 H300" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M410 180 V210" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M520 285 H580" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M830 110 H890" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M830 280 H890" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M1090 110 H1150" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M1090 240 H1150" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M1250 230 V260" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M1090 475 H1150" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M30 85 H12 V475 H30" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<path d="M30 150 H12" stroke="#222" stroke-width="1.5"/>
+<path d="M1120 110 V475 H1090" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#p)"/>
+<circle cx="1120" cy="110" r="3.5" fill="#222"/>
+<circle cx="1120" cy="240" r="3.5" fill="#222"/>
+</svg>
