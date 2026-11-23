@@ -12,7 +12,7 @@ import math
 import random
 from collections import Counter, defaultdict
 
-from scratch_models.corpus import datos
+from scratch_models.corpus import UNK, datos, tokenizar
 
 # Bigrama, no trigrama. Lo medimos y la perplejidad **empeora** al subir el
 # orden: 223.5 con bigrama, 485.8 con trigrama, 692.9 con 4-grama.
@@ -26,6 +26,10 @@ from scratch_models.corpus import datos
 ORDEN = 2
 K = 0.01         # add-k. con k mas grande la distribucion se aplana demasiado
 SEMILLA = 42
+
+# Al generar se muestrea solo entre continuaciones vistas, asi que la escasez que
+# castiga la perplejidad del trigrama aqui no pesa y el contexto extra da frases coherentes.
+ORDEN_GENERACION = 3
 
 
 class ModeloNgramas:
@@ -91,15 +95,34 @@ class ModeloNgramas:
             n += 1
         return math.exp(-suma / n)
 
-    def generar(self, contexto: str, n_palabras: int = 30) -> str:
-        """Texto de muestra, para mirar cualitativamente que aprendio."""
-        generados = contexto.split(" ")
-        for _ in range(n_palabras):
-            previas = generados[-(self.orden - 1) :]
-            pesos = [self.probabilidad(p, previas) for p in self.vocab]
-            generados.append(random.choices(self.vocab, weights=pesos, k=1)[0])
-        return " ".join(generados)
+    def continuaciones(self, contexto: list[str]) -> Counter:
+        """Palabras que siguieron al contexto mas largo visto en el corpus, sin <unk>."""
+        for tamano in range(min(self.orden - 1, len(contexto)), -1, -1):
+            clave = " ".join(contexto[len(contexto) - tamano :]) if tamano else ""
+            vistas = self.conteos[tamano].get(clave, {})
+            opciones = Counter({p: n for p, n in vistas.items() if p != UNK})
+            if opciones:
+                return opciones
+        return Counter()
 
+    def generar(self, contexto: str, n_palabras: int = 30, temperatura: float = 1.0,
+                azar: random.Random | None = None) -> str:
+        """Texto de muestra, para mirar cualitativamente que aprendio.
+
+        No usa add-k: sirve para medir, pero al generar hace que la mayoria de las
+        palabras salgan del reparto uniforme y no del corpus. La temperatura baja
+        favorece las continuaciones frecuentes y la alta las raras.
+        """
+        if temperatura <= 0:
+            raise ValueError("la temperatura debe ser mayor que 0")
+        azar = azar or random
+        generados = [t for t in tokenizar(contexto) if t]
+        for _ in range(n_palabras):
+            opciones = self.continuaciones(generados)
+            palabras = list(opciones)
+            pesos = [opciones[p] ** (1 / temperatura) for p in palabras]
+            generados.append(azar.choices(palabras, weights=pesos, k=1)[0])
+        return " ".join(generados)
 
 def main() -> None:
     random.seed(SEMILLA)
@@ -120,12 +143,12 @@ def main() -> None:
         modelo.entrenar(entrenamiento, vocab)
         print(f"   k = {k:<6} {modelo.perplejidad(validacion):8.1f}")
 
-    modelo = ModeloNgramas()
-    modelo.entrenar(entrenamiento, vocab)
+    generador = ModeloNgramas(orden=ORDEN_GENERACION)
+    generador.entrenar(entrenamiento, vocab)
     print()
-    print("texto generado:")
+    print(f"texto generado (orden {ORDEN_GENERACION}):")
     for contexto in ("canta oh", "el divino"):
-        print(f"   «{modelo.generar(contexto, 22)}»")
+        print(f"   «{generador.generar(contexto, 22)}»")
 
 
 if __name__ == "__main__":

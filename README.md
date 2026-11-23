@@ -8,8 +8,8 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 
 ## Tabla de contenido
 
-1. [Investigación](#investigación)
-2. [Arquitectura](#arquitectura)
+1. [Problema y justificación](#problema-y-justificación)
+2. [Investigación](#investigación)
 3. [Corpus](#corpus)
 4. [Estructura del repositorio](#estructura-del-repositorio)
 5. [Instalación](#instalación)
@@ -18,6 +18,21 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 8. [Recuperación: RAG y GraphRAG](#recuperación-rag-y-graphrag)
 9. [Evaluación](#evaluación)
 10. [Hoja de ruta](#hoja-de-ruta)
+
+---
+
+## Problema y justificación
+
+Quien estudia la Ilíada y la Odisea (un estudiante, un profesor que prepara una clase) suele tener preguntas que no se responden con un solo pasaje: qué hijo de Zeus muere en la Ilíada y quién lo mata, qué personajes de la Ilíada reaparecen en la Odisea, quién es el abuelo de Telémaco. Responderlas exige leer varios cantos, saber que en la traducción de Segalá Júpiter, Minerva o el Pelida son Zeus, Atenea y Aquiles, y cruzar eso con la mitología.
+
+| Alternativa | Por qué no alcanza |
+|---|---|
+| Buscar palabras clave en el texto | La traducción usa nombres latinos y epítetos: buscar "Zeus" no encuentra "Júpiter". Devuelve pasajes sueltos, no une dos cantos ni da la respuesta. |
+| Leer Wikipedia | Resume el mito, pero no dice en qué canto pasa algo ni cita el poema. |
+| Preguntarle directamente a un LLM | Responde con fluidez, pero mezcla versiones del mito, no cita la fuente y puede inventar. |
+| RAG normal | Recupera por parecido de texto: en 9 de las 20 preguntas trae solo Wikipedia y ningún canto ([Evaluación](#evaluación)). |
+
+GenAI aporta lo que una solución tradicional no puede hacer a esta escala: el LLM extrae personajes y relaciones de 664 fragmentos de prosa de 1908-1910, que de otro modo habría que anotar a mano, y redacta la respuesta en lenguaje natural con el canto de cada dato. El grafo le entrega al LLM los hechos ya conectados que la búsqueda por parecido no encuentra, y el prompt lo obliga a responder solo con lo recuperado.
 
 ---
 
@@ -30,7 +45,7 @@ Responde preguntas cruzando información entre La Ilíada, La Odisea y artículo
 | Recuperación | Índice vectorial y Cypher sobre Neo4j | RAG y GraphRAG leen la misma base y los mismos embeddings |
 | Embeddings | `paraphrase-multilingual-MiniLM-L12-v2` | 384 dimensiones; el mismo modelo para RAG y GraphRAG (comparación justa) |
 | Agente | LangGraph | Decide qué herramienta consultar |
-| Interfaz | Gradio | Chat, temperatura, camino recorrido en el grafo |
+| Interfaz | Gradio | Chat con los pasos del agente, RAG y GraphRAG lado a lado, generador n-grama con temperatura |
 | Modelos desde cero | Python / PyTorch | N-grama y mini red sobre los poemas |
 
 ---
@@ -325,9 +340,11 @@ Las dos perplejidades se miden sobre el mismo vocabulario, la misma partición y
 Dos cosas que salieron de medir y no de suponer:
 
 1. **El n-grama empeora al subir el orden.** No es un error, es escasez de datos: con 82 mil tokens de entrenamiento casi todo contexto de tres palabras se vio una sola vez, y add-k reparte esa única observación entre 4.811 palabras (el denominador queda en ~49, así que la continuación observada se queda con 0.02 de probabilidad). Por eso el modelo que quedó es el **bigrama**, no el trigrama.
-2. **Con el mismo contexto de dos palabras, la red es 3,8 veces mejor que el trigrama** (486 → 129). La diferencia no es cuánta información recibe cada uno, es qué hace con ella: el n-grama cuenta secuencias exactas y una que no vio no le dice nada, mientras que la red representa cada palabra como un vector y lo que aprendió de "Aquiles" le sirve para "Patroclo".
+2. **Con el mismo contexto de dos palabras, la red es 3,8 veces mejor que el trigrama** (486 -> 129). La diferencia no es cuánta información recibe cada uno, es qué hace con ella: el n-grama cuenta secuencias exactas y una que no vio no le dice nada, mientras que la red representa cada palabra como un vector y lo que aprendió de "Aquiles" le sirve para "Patroclo".
 
 La red sobreajusta desde la época 5, así que `mini_red.py` se queda con el mejor estado en validación y no con el último.
+
+El generador de texto de la interfaz no muestrea con add-k: el suavizado sirve para medir, pero al generar el 70 % de las palabras salía del reparto uniforme y no del corpus, y aparecía `<unk>`. Por eso elige solo entre continuaciones vistas en los poemas, con el contexto más largo que exista (trigrama por defecto) y una temperatura. Así la escasez que hunde la perplejidad del trigrama no afecta: con más contexto las frases son más coherentes, pero copian más del original.
 
 ---
 
@@ -361,9 +378,12 @@ La red sobreajusta desde la época 5, así que `mini_red.py` se queda con el mej
 **Fase 4: agente, modelos e interfaz (días 8-11)**
 - [x] Agente en LangGraph
 - [x] N-grama y mini red
-- [x] Interfaz en Gradio
+- [x] Generador n-grama con frases coherentes: solo continuaciones vistas, contexto de 2 a 4 palabras y temperatura
+- [x] Interfaz en Gradio con errores controlados (Neo4j o LLM caídos, pregunta vacía o larga)
 
 **Fase 5: cierre (días 12-14)**
 - [x] Tabla de resultados (`eval/resultados/resumen.md` y `tabla_final.md`) y perplejidades
 - [x] Bitácora de pruebas (`PRUEBAS.md`)
 - [x] Diagrama (`docs/arquitectura.svg`) y diapositivas (`docs/Mnemosine-Oracle.pptx`)
+- [x] Sección de problema y justificación
+- [x] Video de 5 minutos y entrega
