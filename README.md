@@ -201,7 +201,7 @@ El esquema es fijo en `graph/schema.py`, para que el LLM no invente tipos de nod
 
 **Nodos:** Deidad, Personaje, Criatura, Lugar, Grupo, Objeto.
 
-**Relaciones:** HIJO_DE, HERMANO_DE, ESPOSO_DE, AMA_A, ENFRENTA_A, AYUDA_A, APOYA_A, ORDENA_A, VIAJA_A, VIVE_EN, PERTENECE_A, CREA, POSEE
+**Relaciones:** HIJO_DE, HERMANO_DE, ESPOSO_DE, AMA_A, MATA_A, ENFRENTA_A, AYUDA_A, APOYA_A, ORDENA_A, VIAJA_A, VIVE_EN, PERTENECE_A, CREA, POSEE
 
 Además está el **grafo léxico**: 
 
